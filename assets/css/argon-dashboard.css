@@ -10508,7 +10508,7 @@ fieldset:disabled .btn {
 
 /* rtl:end:remove */
 .text-primary {
-  color: #5e72e4 !important;
+  color: #5e72e4;
 }
 
 .text-secondary {

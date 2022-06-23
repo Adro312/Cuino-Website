@@ -6,7 +6,7 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$view = 'home';
-		$array = ['page' => 'pages/intro.php'];
+		$array = ['page' => 'pages/log/Login.php'];
 		$this->load->view($view, $array);
 	}
 }
