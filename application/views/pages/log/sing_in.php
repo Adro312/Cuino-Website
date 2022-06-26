@@ -25,7 +25,7 @@
                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
                   <p class="mb-4 login-text-subtitle- mx-auto">
                     Don't have an account?
-                    <a href="javascript:;" class="text-primary-own font-weight-bold">Sign up</a>
+                    <a href="<?=site_url('Register');?>" class="text-primary-own font-weight-bold">Sign up</a>
                   </p>
                 </div>
               </div>
