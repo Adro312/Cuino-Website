@@ -3,11 +3,11 @@
 Sitio Web para el restaurante vegetariano "Cuino". 
 Un resturante ficticio, creado para un proyecto universitario enfocado al diseño y multimedia de una pagina web.
 
-### Installing
+### Intalación:
 
 Descarga o Clona este proyecto dentro de la carpeta donde se ejecuta tu servidor local. No es necesario modificar nada. Una vez prendido tu servidor local, podra ejecutarse en tu navegador sin ningun problema.
 
-## Built With
+### Construido con:
 
 * Desarrollo Backend:
 Se utiliza el framework php "CodeIgniter" para los controladores de las vistas, ya que se divide el codigo como componentes, todo con php. Al igual para ejecutar la API que se desarrollo con "Ruby on Rails" y poder hacer un modelo CRUD el la parte de "Menu".
