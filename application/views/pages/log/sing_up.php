@@ -24,7 +24,7 @@
                       <input type="email" class="form-control form-control-lg" placeholder="Password" aria-label="Password">
                     </div>
                     <div class="text-center">
-                      <button type="button" class="btn btn-lg btn-primary btn-lg text-btn-type w-100 mt-4 mb-0">Sign Up</button>
+                    <a href="<?=site_url('Pages/About_Us');?>"><button type="button" class="btn btn-lg btn-primary btn-lg text-btn-type w-100 mt-4 mb-0">Sign Up</button></a>
                     </div>
                   </form>
                 </div>
