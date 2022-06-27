@@ -15,12 +15,19 @@
               <hr style="border: 1px solid #064420; width: 70%; margin: 30px auto 0px auto;">
             </div>
             <div class="card-header pb-0">
-                <div style="width: 80%; margin: 0px auto 30px; padding-left: 20px; padding-right: 20px;">
+                <div style="width: 100%; margin: 0px auto 30px;">
                     <p style="color: rgba(0, 0, 0, 0.800); font-size: 1.8em; text-align: center;">
-                        We design and develop web and mobile apps for startups, 
-                        small  and medium businesses.
-                        We want the user to have a good and unforgettable 
-                        experience, we focus on satisfying the customer.
+                        The idea of Cuino is a constant leap in time, both the concept and the design of the place, 
+                        it was developed and executed by the couple Uriel Loaiza and Montserrat Pichardo, who 
+                        with a clean and sophisticated design, managed to create an atmosphere that 
+                        escapes from San Jose Iturbide. Ornamentation, reflections and geometry 
+                        play an important role in the construction of a timeless environment, which refers us 
+                        }to the aesthetics of art, and in turn, has design touches that place us in the current 
+                        context, and intensify the contrast. of nature and the city. The clean and natural 
+                        design that characterizes this project can be seen in its kitchen, a mixture of a brasserie 
+                        and a steakhouse, with simple dishes but with the impeccable technique of Chilango chef
+                        Daniel Olvera. The drinks bar was recovered from an old restaurant, which today offers an 
+                        exquisite selection of juices and classic cocktails.
                     </p>
                 </div>
                 <figure style="width: 100%;">
