@@ -10,7 +10,7 @@ Descarga o Clona este proyecto dentro de la carpeta donde se ejecuta tu servidor
 ### Construido con:
 
 * Desarrollo Backend:
-Se utiliza el framework php "CodeIgniter" para los controladores de las vistas, ya que se divide el codigo como componentes, todo con php. Al igual para ejecutar la API que se desarrollo con "Ruby on Rails" y poder hacer un modelo CRUD el la parte de "Menu".
+Se utiliza el framework php "CodeIgniter" => https://www.codeigniter.com/ para los controladores de las vistas, ya que se divide el codigo como componentes, todo con php. Al igual para ejecutar la API que se desarrollo con "Ruby on Rails" y poder hacer un modelo CRUD el la parte de "Menu".
 
 * Desarrolo Frontend:
 Se utiliza fragmentos de codigo de una platilla base de "Creative Tim" => https://www.creative-tim.com/ llamada "ARGON DASHBOARD 2" => https://demos.creative-tim.com/argon-dashboard/pages/dashboard que utiliza "Bootsrap 5".
