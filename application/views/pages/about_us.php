@@ -10,7 +10,7 @@
                 </a>
                 <ul class="breadcrumb bg-transparent justify-content-center" style="width: 70%; height: auto; align-self: center; margin-top: auto; margin-bottom: auto;">
                     <li><a class="text-white text-btn-type" style="font-size: 1.3em;" href="<?=site_url('Pages/About_Us');?>">About Us</a></li>
-                    <li><a class="opacity-5 text-white text-btn-type" style="font-size: 1.3em; margin-left: 1.7em;" href="<?=site_url('Pages/Enterprise');?>">Enterprise</a></li>
+                    <li><a class="opacity-5 text-white text-btn-type" style="font-size: 1.3em; margin-left: 1.7em;" href="<?=site_url('Pages/Enterprise');?>">Developing</a></li>
                     <li><a class="opacity-5 text-white text-btn-type" style="font-size: 1.3em; margin-left: 1.7em;" href="<?=site_url('Pages/Menu');?>">Menu</a></li>
                     <li><a class="opacity-5 text-white text-btn-type" style="font-size: 1.3em; margin-left: 1.7em;" href="<?=site_url('Pages/Reviews');?>">Reviews</a></li>
                     <li><a class="opacity-5 text-white text-btn-type" style="font-size: 1.3em; margin-left: 1.7em;" href="<?=site_url('Pages/Profile');?>">Profile</a></li>
@@ -38,8 +38,8 @@
               <hr style="border: 1px solid #064420; width: 70%; margin: 30px auto 0px auto;">
             </div>
             <div class="card-header pb-0">
-                <div style="width: 100%; margin: 0px auto 30px; padding-left: 20px; padding-right: 20px;">
-                    <p style="color: rgba(0, 0, 0, 0.800); font-size: 1.8em; text-align: justify;">
+                <div style="width: 100%; display: flex; justify-content: center; margin-bottom: 10px;">
+                    <p style="color: rgba(0, 0, 0, 0.800); font-size: 1.6em; text-align: justify; width: 90%;">
                         The idea of Cuino is a constant leap in time, both the concept and the design of the place, 
                         it was developed and executed by the couple Uriel Loaiza and Montserrat Pichardo, who 
                         with a clean and sophisticated design, managed to create an atmosphere that 
@@ -53,11 +53,11 @@
                         exquisite selection of juices and classic cocktails.
                     </p>
                 </div>
-                <figure style="width: 100%;">
-                    <img src="<?=base_url('assets/img/illustrations/restaurante.jpg');?>" alt="" style="width: 100%; border-radius: 10px;">
+                <figure style="width: 100%; display: flex; justify-content: center;">
+                    <img src="<?=base_url('assets/img/illustrations/restaurante.jpg');?>" alt="" style="width: 90%; border-radius: 10px;">
                 </figure>
 
-                <h2 style="margin-top: 60px; text-align: center; color: rgba(0, 0, 0, 0.800);">Contact</h2>
+                <h2 style="margin-top: 30px; text-align: center; color: rgba(0, 0, 0, 0.800);">Contact</h2>
                 <hr style="border: 1px solid #064420; width: 70%; margin: 30px auto 0px auto;">
                  
                 <div style="width: 80%; margin: 30px auto 30px; display: flex; flex-direction: row; justify-content: center; align-items: center;">
@@ -81,7 +81,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4" style="color: #064420">
+                            <div class="col-md-4 mt-md-0 mt-4" style="color: #064420">
                                 <div class="card">
                                     <div class="mx-4 p-3 text-center">
                                         <div class="text-center">
@@ -99,7 +99,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4" style="color: #064420">
+                            <div class="col-md-4 mt-md-0 mt-4" style="color: #064420">
                                 <div class="card">
                                     <div class="mx-4 p-3 text-center">
                                         <div class="text-center">
