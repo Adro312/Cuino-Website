@@ -2,7 +2,30 @@
 
 <main class="main-content position-relative border-radius-lg ">
     <!-- Navbar -->
-    <?=$this->load->view('layouts/nav.php',null,TRUE);?>
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl mt-4" id="navbarBlur" data-scroll="false">
+        <div class="container-fluid py-1 px-3" style="margin: 0px auto; width: 90%; display: flex; flex-direction: row; align-items: center; justify-content: space-around;">
+            <nav aria-label="breadcrumb" class="row" style="display: flex; flex-direction: row; align-items: center; justify-content: space-evenly;">
+                <a href="<?=site_url('Pages/About_Us');?>" style="width: 15%;">
+                    <img src="<?=base_url('assets/img/logos/LogoLetrasBlancas.png');?>" alt="" style="width: 100%;">
+                </a>
+                <ul class="breadcrumb bg-transparent justify-content-center" style="width: 70%; height: auto; align-self: center; margin-top: auto; margin-bottom: auto;">
+                    <li><a class="text-white text-btn-type" style="font-size: 1.3em;" href="<?=site_url('Pages/About_Us');?>">About Us</a></li>
+                    <li><a class="opacity-5 text-white text-btn-type" style="font-size: 1.3em; margin-left: 1.7em;" href="<?=site_url('Pages/Enterprise');?>">Developing</a></li>
+                    <li><a class="opacity-5 text-white text-btn-type" style="font-size: 1.3em; margin-left: 1.7em;" href="<?=site_url('Pages/Menu');?>">Menu</a></li>
+                    <li><a class="opacity-5 text-white text-btn-type" style="font-size: 1.3em; margin-left: 1.7em;" href="<?=site_url('Pages/Reviews');?>">Reviews</a></li>
+                    <li><a class="opacity-5 text-white text-btn-type" style="font-size: 1.3em; margin-left: 1.7em;" href="<?=site_url('Pages/Profile');?>">Profile</a></li>
+                </ul>
+                <div style="width: 15%;" class="justify-content-lg-end">
+                    <a href="<?=site_url('Login');?>">
+                        <button style="float: right; width: 80%; border-radius: 10px; border: none; display: flex; flex-direction: row; align-items: center; justify-content: space-around;">
+                            <ion-icon name="log-out-outline" style="font-size: 2em; margin: auto;"></ion-icon>
+                            <p style="font-size: 1.5em; margin-top: auto; margin-bottom: auto; margin-right: 0.5em;">Log Out</p>
+                        </button>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </nav>
     <!-- End Navbar -->
 
     <!-- Content  -->
@@ -15,8 +38,8 @@
               <hr style="border: 1px solid #064420; width: 70%; margin: 30px auto 0px auto;">
             </div>
             <div class="card-header pb-0">
-                <div style="width: 100%; margin: 0px auto 30px;">
-                    <p style="color: rgba(0, 0, 0, 0.800); font-size: 1.8em; text-align: center;">
+                <div style="width: 100%; display: flex; justify-content: center; margin-bottom: 10px;">
+                    <p style="color: rgba(0, 0, 0, 0.800); font-size: 1.6em; text-align: justify; width: 90%;">
                         The idea of Cuino is a constant leap in time, both the concept and the design of the place, 
                         it was developed and executed by the couple Uriel Loaiza and Montserrat Pichardo, who 
                         with a clean and sophisticated design, managed to create an atmosphere that 
@@ -30,26 +53,11 @@
                         exquisite selection of juices and classic cocktails.
                     </p>
                 </div>
-                <figure style="width: 100%;">
-                    <img src="<?=base_url('assets/img/illustrations/restaurante.jpg');?>" alt="" style="width: 100%; border-radius: 10px;">
+                <figure style="width: 100%; display: flex; justify-content: center;">
+                    <img src="<?=base_url('assets/img/illustrations/restaurante.jpg');?>" alt="" style="width: 90%; border-radius: 10px;">
                 </figure>
 
-                <h2 style="margin-top: 60px; text-align: center; color: rgba(0, 0, 0, 0.800);">Why?</h2>
-                <hr style="border: 1px solid #064420; width: 70%; margin: 30px auto 0px auto;">
-                <div style="width: 80%; margin: 30px auto 40px; padding-left: 20px; padding-right: 20px;">
-                    <p style="color: rgba(0, 0, 0, 0.800); font-size: 1.8em; text-align: center;">
-                        Because as much as you love good design and inspiring illustrations, you 
-                        also want to meet the people that curate all the content for you.
-
-                        Furthermore, it's equally rewarding when you realize that they are just 
-                        as eager to start a visual dialogue with you.
-
-                        Angel, Rafael, Uriel y Kike are doing what makes them happy, 
-                        and this is obvious throughout their page.
-                    </p>
-                </div>
-
-                <h2 style="margin-top: 60px; text-align: center; color: rgba(0, 0, 0, 0.800);">Contact</h2>
+                <h2 style="margin-top: 30px; text-align: center; color: rgba(0, 0, 0, 0.800);">Contact</h2>
                 <hr style="border: 1px solid #064420; width: 70%; margin: 30px auto 0px auto;">
                  
                 <div style="width: 80%; margin: 30px auto 30px; display: flex; flex-direction: row; justify-content: center; align-items: center;">
@@ -73,7 +81,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4" style="color: #064420">
+                            <div class="col-md-4 mt-md-0 mt-4" style="color: #064420">
                                 <div class="card">
                                     <div class="mx-4 p-3 text-center">
                                         <div class="text-center">
@@ -91,7 +99,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4" style="color: #064420">
+                            <div class="col-md-4 mt-md-0 mt-4" style="color: #064420">
                                 <div class="card">
                                     <div class="mx-4 p-3 text-center">
                                         <div class="text-center">
