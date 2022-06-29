@@ -4,22 +4,22 @@
     <!-- Navbar -->
     <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl mt-4" id="navbarBlur" data-scroll="false">
         <div class="container-fluid py-1 px-3" style="margin: 0px auto; width: 90%; display: flex; flex-direction: row; align-items: center; justify-content: space-around;">
-            <nav aria-label="breadcrumb" class="row" style="display: flex; flex-direction: row; align-items: center; justify-content: space-evenly;">
-                <a href="<?=site_url('Pages/About_Us');?>" style="width: 15%;">
-                    <img src="<?=base_url('assets/img/logos/LogoLetrasBlancas.png');?>" alt="" style="width: 100%;">
+            <nav aria-label="breadcrumb" class="row nav-less-950 nav-plus-1024">
+                <a href="<?=site_url('Pages/About_Us');?>" class="icono-nav-1024 icono-nav-769 icono-nav-600">
+                    <img src="<?=base_url('assets/img/logos/LogoLetrasBlancas.png');?>" alt="" class="icono-cuino-grande icono-cuino-grande-600">
                 </a>
-                <ul class="breadcrumb bg-transparent justify-content-center" style="width: 70%; height: auto; align-self: center; margin-top: auto; margin-bottom: auto;">
-                    <li><a class="text-white text-btn-type" style="font-size: 1.3em;" href="<?=site_url('Pages/About_Us');?>">About Us</a></li>
-                    <li><a class="opacity-5 text-white text-btn-type" style="font-size: 1.3em; margin-left: 1.7em;" href="<?=site_url('Pages/Enterprise');?>">Developing</a></li>
-                    <li><a class="opacity-5 text-white text-btn-type" style="font-size: 1.3em; margin-left: 1.7em;" href="<?=site_url('Pages/Menu');?>">Menu</a></li>
-                    <li><a class="opacity-5 text-white text-btn-type" style="font-size: 1.3em; margin-left: 1.7em;" href="<?=site_url('Pages/Reviews');?>">Reviews</a></li>
-                    <li><a class="opacity-5 text-white text-btn-type" style="font-size: 1.3em; margin-left: 1.7em;" href="<?=site_url('Pages/Profile');?>">Profile</a></li>
+                <ul class="breadcrumb bg-transparent justify-content-center ul-menu-cuino" id="menu-original">
+                    <li><a class="text-white text-btn-type item-menu-768 item-menu-1024 item-menu-600" href="<?=site_url('Pages/About_Us');?>">About Us</a></li>
+                    <li><a class="opacity-5 text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Enterprise');?>">Developing</a></li>
+                    <li><a class="opacity-5 text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Menu');?>">Menu</a></li>
+                    <li><a class="opacity-5 text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Reviews');?>">Reviews</a></li>
+                    <li><a class="opacity-5 text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Profile');?>">Profile</a></li>
                 </ul>
-                <div style="width: 15%;" class="justify-content-lg-end">
+                <div class="justify-content-lg-end seccion-boton-logout">
                     <a href="<?=site_url('Login');?>">
-                        <button style="float: right; width: 80%; border-radius: 10px; border: none; display: flex; flex-direction: row; align-items: center; justify-content: space-around;">
-                            <ion-icon name="log-out-outline" style="font-size: 2em; margin: auto;"></ion-icon>
-                            <p style="font-size: 1.5em; margin-top: auto; margin-bottom: auto; margin-right: 0.5em;">Log Out</p>
+                        <button class="boton-salir boton-salir-600">
+                            <ion-icon name="log-out-outline" class="icon-boton-log-out-media-Plus-that-1024xp icon-boton-log-out-media-Plus-that-1024xp icon-boton-log-out-media-Plus-that-769px" id="icono-log-out"></ion-icon>
+                            <p class="boton-log-out-media-1024xp boton-log-out-media-Plus-that-1024xp boton-log-out-media-769px">Log Out</p>
                         </button>
                     </a>
                 </div>
@@ -37,7 +37,7 @@
               <h2 style="text-align: center; color: rgba(0, 0, 0, 0.800);">About Us</h2>
               <hr style="border: 1px solid #064420; width: 70%; margin: 30px auto 0px auto;">
             </div>
-            <div class="card-header pb-0">
+            <div class="pb-0">
                 <div style="width: 100%; display: flex; justify-content: center; margin-bottom: 10px;">
                     <p style="color: rgba(0, 0, 0, 0.800); font-size: 1.6em; text-align: justify; width: 90%;">
                         The idea of Cuino is a constant leap in time, both the concept and the design of the place, 
@@ -71,7 +71,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body pt-0 p-3 text-center">
-                                        <h3 class="text-center mb-0" style="color: rgba(0, 0, 0, 0.800);">Facebook</h3>
+                                        <h3 class="text-center mb-0" style="color: rgba(0, 0, 0, 0.800); font-size: 1.2em;">Facebook</h3>
                                         <hr class="horizontal dark my-3">
                                         <a href="https://www.facebook.com/profile.php?id=100082871556420" target="_blank">
                                             <button style="margin: 0px auto; border: 1px solid #064420; border-radius: 10px; background-color: #06442087; width: 30%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
@@ -89,7 +89,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body pt-0 p-3 text-center">
-                                        <h3 class="text-center mb-0" style="color: rgba(0, 0, 0, 0.800);">Instagram</h3>
+                                        <h3 class="text-center mb-0" style="color: rgba(0, 0, 0, 0.800); font-size: 1.2em;">Instagram</h3>
                                         <hr class="horizontal dark my-3">
                                         <a href="https://www.instagram.com/cuino_raue/" target="_blank">
                                             <button style="margin: 0px auto; border: 1px solid #064420; border-radius: 10px; background-color: #06442087; width: 30%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
@@ -107,7 +107,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body pt-0 p-3 text-center">
-                                        <h3 class="text-center mb-0" style="color: rgba(0, 0, 0, 0.800);">Gmail</h3>
+                                        <h3 class="text-center mb-0" style="color: rgba(0, 0, 0, 0.800); font-size: 1.2em;">Gmail</h3>
                                         <hr class="horizontal dark my-3">
                                         <a href="mailto:cuinoRAUE@gmail.com">
                                             <button style="margin: 0px auto; border: 1px solid #064420; border-radius: 10px; background-color: #06442087; width: 30%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
