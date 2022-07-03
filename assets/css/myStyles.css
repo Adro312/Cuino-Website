@@ -221,10 +221,11 @@ p, .text-cuino{
         margin: auto;
     }
     .item-menu-600{
-        font-size: 0.8em; 
+        font-size: 0.7em; 
         margin-left: 0.4em;
         width: 100%;
         height: auto;
+        z-index: 100;
     }
     .nav-less-950{
         width: 100%;
@@ -244,6 +245,7 @@ p, .text-cuino{
     }
     .icono-cuino-grande-600 {
         width: 150px;
+        z-index: 100;
     }
     .ul-menu-cuino{
         width: 100%; 
@@ -255,6 +257,7 @@ p, .text-cuino{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        z-index: 100;
     }
     .boton-salir-600{
         float: right; 
