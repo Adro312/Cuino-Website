@@ -19,3 +19,4 @@ Se utiliza fragmentos de codigo de una platilla base de "Creative Tim" => https:
 
 * Angel Daniel Ramírez Olvera => https://github.com/Adro312
 * Luis Enrique Garcia Rodriguez => https://github.com/Henrriegel
+* Uriel Loaiza Papalotzi => https://github.com/UriLP
