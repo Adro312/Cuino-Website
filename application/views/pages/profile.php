@@ -29,7 +29,7 @@
     <!-- End Navbar -->
 
     <!-- Content  -->
-    <div class="container-fluid py-4 g-sidenav-show">
+    <div class="container-fluid py-4">
       <div class="row">
         <div class="col-12">
           <div class="card mb-4">
@@ -41,46 +41,9 @@
               <!-- 
                   Aqui poner todo el contenido que va a ir en la pagina
                 -->
-              <aside class="sidenav side-menu navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl mb-3 mt-8 fixed-start ms-4 " id="sidenav-main">
-                <div class="sidenav-header">
-                  <span class="h4 header-settings">Settings</span>
-                </div>
-                <hr class="horizontal dark mt-0">
-                <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link " href="">
-                        <span class="text-cuino-sidenav ms-1 ">My Details</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="">
-                        <span class="text-cuino-sidenav ms-1">Shopping Cart</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="">
-                        <span class="text-cuino-sidenav ms-1">My points</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="">
-                        <span class="text-cuino-sidenav ms-1">Redeem Coupons</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="">
-                        <span class="text-cuino-sidenav ms-1">My Coupons</span>
-                      </a>
-                    </li>
-                    
-                  </ul>
-                </div>
-              </aside>
-
               <div class="main-content position-relative max-height-vh-100 h-100">
                 <div class="container-fluid py-4">
-                  <div class=" my-details">
+                  <div class="my-details"> <!-- Centra el contenido del formulario -->
                     <div class="col-md-8">
                       <div class="card">
                         <div class="card-body">
