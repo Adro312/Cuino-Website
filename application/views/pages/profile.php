@@ -1,4 +1,4 @@
-<div class="min-height-300 position-absolute w-100 " style="background-color: #064420 !important;"></div>
+<div class="min-height-300 position-absolute w-100" style="background-color: #064420 !important;"></div>
 
 <main class="main-content position-relative border-radius-lg ">
     <!-- Navbar -->
