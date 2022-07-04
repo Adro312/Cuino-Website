@@ -29,6 +29,75 @@ p, .text-cuino{
 .bg-gradient-primary {
     background-image: linear-gradient(310deg, #064420 0%, #064420 100%);
 }
+.btn-cuino-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #064420;
+    --bs-btn-border-color: #064420;
+    --bs-btn-hover-color: #064420;
+    --bs-btn-hover-bg: #FDFAF6;
+    --bs-btn-hover-border-color: #064420;
+    --bs-btn-focus-shadow-rgb: 80, 97, 194;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #064420;
+    --bs-btn-active-border-color: #064420;
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #064420;
+    --bs-btn-disabled-border-color: #064420;
+}
+a {
+    color: #064420;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+a:hover {
+    color: rgb(6, 68, 32, 0.7);
+    text-decoration: none;
+}
+/* navbar */
+.nav-bar:hover {
+    color: rgb(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+/* Profile */
+.side-menu {
+    background-color: #FDFAF6;
+}
+.header-settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: 'Caveat', cursive;
+    color: #064420;
+}
+.text-cuino-sidenav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: 'Caveat', cursive;
+    transition: all .2s ease-in-out;
+}
+.text-cuino-sidenav:hover {
+    font-size: 1.6rem;
+    color: #064420;
+}
+.my-details {
+    margin-left: 5rem;
+    margin-right: auto;
+}
+label {
+    color: #000;
+}
 .btn-primary {
     --bs-btn-color: #000;
     --bs-btn-bg: #064420;
@@ -45,9 +114,9 @@ p, .text-cuino{
     --bs-btn-disabled-bg: #064420;
     --bs-btn-disabled-border-color: #064420;
 }
-.text-primary-own {
+/* .text-primary-own {
     color: #064420;
-}
+} */
 .button-logout-nav{
     display: flex;
     justify-content: center;
@@ -275,5 +344,11 @@ p, .text-cuino{
         width: 100%; 
         height: 100%;
         position: absolute;
+    }
+    .my-details {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
     }
 }
