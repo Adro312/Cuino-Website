@@ -84,7 +84,7 @@
                       </div>
                       <div class="col-md-3 mt-md-0 mt-4">
                         <div class="card">
-                          <div class="card-header mx-4 p-3 text-center">
+                          <div class="mx-4 p-3 text-center">
                             <div class="text-center">
                               <img src="<?=base_url('assets/img/illustrations/persona5.jpg');?>" alt="" style="border-radius: 50%; width: 100%;">
                             </div>
@@ -116,7 +116,7 @@
                       </div>
                       <div class="col-md-3 mt-md-0 mt-4">
                         <div class="card">
-                          <div class="card-header mx-4 p-3 text-center">
+                          <div class="mx-4 p-3 text-center">
                             <div class="text-center">
                               <img src="<?=base_url('assets/img/illustrations/persona8.jpeg');?>" alt="" style="border-radius: 50%; width: 100%;">
                             </div>
@@ -148,7 +148,7 @@
                       </div>
                       <div class="col-md-3 mt-md-0 mt-4">
                         <div class="card">
-                          <div class="card-header mx-4 p-3 text-center">
+                          <div class="mx-4 p-3 text-center">
                             <div class="text-center">
                               <img src="<?=base_url('assets/img/illustrations/persona7.jpeg');?>" alt="" style="border-radius: 50%; width: 100%;">
                             </div>
