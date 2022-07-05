@@ -5,7 +5,6 @@
     <?=$this->load->view('layouts/head.php',null,TRUE);?>
 </head>
 <body>
-    <div class="min-height-300 position-absolute w-100" style="background-color: #064420 !important;"></div>
     <!-- Contenido que mostrar -->
     <?=$this->load->view($page,null,TRUE);?>
 
