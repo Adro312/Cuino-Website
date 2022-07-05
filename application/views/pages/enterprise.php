@@ -61,17 +61,17 @@
                             <div class="justify-content-center" style="color:rgba(0, 0, 0, 0.6);">
                                 <ul class="nav nav-footer justify-content-center">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link text-muted" target="_blank">
+                                    <a href="https://www.linkedin.com/in/luis-enrique-garc%C3%ADa-rodr%C3%ADguez-081300244/" class="nav-link text-muted" target="_blank">
                                       <ion-icon name="logo-linkedin" size="large" style="color:rgba(0, 0, 0, 0.6);"></ion-icon>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link text-muted" target="_blank">
+                                    <a href="https://github.com/Henrriegel" class="nav-link text-muted" target="_blank">
                                       <ion-icon name="logo-github" size="large" style="color:rgba(0, 0, 0, 0.6);"></ion-icon>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link text-muted" target="_blank">
+                                    <a href="https://gitlab.com/henrriegel" class="nav-link text-muted" target="_blank">
                                       <ion-icon name="logo-gitlab" size="large" style="color:rgba(0, 0, 0, 0.6);"></ion-icon>
                                     </a>
                                 </li>
