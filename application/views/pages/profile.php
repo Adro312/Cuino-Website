@@ -51,7 +51,13 @@
                           <div class="row">
                             <div class="col-md-6">
                               <div class="form-group">
-                                <label for="example-text-input" class="form-control-label text-cuino">Username</label>
+                                <label for="example-text-input" class="form-control-label text-cuino">Name</label>
+                                <input class="form-control" type="text" value="">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="example-text-input" class="form-control-label text-cuino">Cellphone</label>
                                 <input class="form-control" type="text" value="">
                               </div>
                             </div>
@@ -61,54 +67,15 @@
                                 <input class="form-control" type="email" value="">
                               </div>
                             </div>
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="example-text-input" class="form-control-label text-cuino">First name</label>
-                                <input class="form-control" type="text" value="">
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="example-text-input" class="form-control-label text-cuino">Last name</label>
-                                <input class="form-control" type="text" value="">
-                              </div>
-                            </div>
-                          </div>
-                          <hr class="horizontal dark">
-                          <p class="text-uppercase fw-bold text-lg">Contact Information</p>
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <label for="example-text-input" class="form-control-label text-cuino">Address</label>
-                                <input class="form-control" type="text" value="">
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label for="example-text-input" class="form-control-label text-cuino">City</label>
-                                <input class="form-control" type="text" value="">
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label for="example-text-input" class="form-control-label text-cuino">Country</label>
-                                <input class="form-control" type="text" value="">
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label for="example-text-input" class="form-control-label text-cuino">Postal code</label>
-                                <input class="form-control" type="text" value="">
-                              </div>
-                            </div>
                           </div>
                           <hr class="horizontal dark">
                           <p class="text-uppercase fw-bold text-lg">About me</p>
                           <div class="row">
                             <div class="col-md-12">
                               <div class="form-group">
-                                <label for="example-text-input" class="form-control-label text-cuino">About me</label>
-                                <input class="form-control" type="text" value="">
+                                <label for="example-text-input" class="form-control-label text-cuino">Tell us about you</label>
+                                <!-- <input class="form-control" type="text" value=""> -->
+                                <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
                               </div>
                             </div>
                           </div>
