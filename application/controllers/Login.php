@@ -9,7 +9,6 @@ class Login extends CI_Controller {
 			'data' => $errors,
 		];
 		$this->load->view('layout', $array);
-		$this->load->helper('url');
 	}
 	
 	public function login(){
@@ -38,6 +37,13 @@ class Login extends CI_Controller {
 			$data = json_decode($response, true);
 
 			if ($data['errorMessage'] == ''){
+				session_start();
+				$this->session->set_userdata('id', $data['data']['id']);
+				$this->session->set_userdata('name', $data['data']['name']);
+				$this->session->set_userdata('cellphone', $data['data']['cellphone']);
+				$this->session->set_userdata('email', $data['data']['email']);
+				$this->session->set_userdata('created_at', $data['data']['created_at']);
+				$this->session->set_userdata('role', $data['data']['role']);
 				redirect('Pages/About_Us');
 			} else {
 				$this->index($data['errorMessage']);

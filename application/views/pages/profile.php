@@ -16,12 +16,12 @@
                     <li><a class="nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Profile');?>">Profile</a></li>
                 </ul>
                 <div class="justify-content-lg-end seccion-boton-logout">
-                    <a href="<?=site_url('Login');?>">
-                        <button class="boton-salir boton-salir-600">
+                    <form action="<?=site_url('Pages/Profile/logOut');?>">
+                        <button type="submit" class="boton-salir boton-salir-600">
                             <ion-icon name="log-out-outline" class="icon-boton-log-out-media-Plus-that-1024xp icon-boton-log-out-media-Plus-that-1024xp icon-boton-log-out-media-Plus-that-769px" id="icono-log-out"></ion-icon>
                             <p class="boton-log-out-media-1024xp boton-log-out-media-Plus-that-1024xp boton-log-out-media-769px">Log Out</p>
                         </button>
-                    </a>
+                    </form>
                 </div>
             </nav>
         </div>
@@ -52,30 +52,39 @@
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="example-text-input" class="form-control-label text-cuino">Name</label>
-                                <input class="form-control" type="text" value="">
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="example-text-input" class="form-control-label text-cuino">Cellphone</label>
-                                <input class="form-control" type="text" value="">
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="example-text-input" class="form-control-label text-cuino">Email address</label>
-                                <input class="form-control" type="email" value="">
+                                <input class="form-control" type="text" value="<?=$this->session->name?>">
                               </div>
                             </div>
                           </div>
-                          <hr class="horizontal dark">
-                          <p class="text-uppercase fw-bold text-lg">About me</p>
                           <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                               <div class="form-group">
-                                <label for="example-text-input" class="form-control-label text-cuino">Tell us about you</label>
-                                <!-- <input class="form-control" type="text" value=""> -->
-                                <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+                                <label for="example-text-input" class="form-control-label text-cuino">Cellphone</label>
+                                <input class="form-control" type="text" value="<?=$this->session->cellphone?>">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="example-text-input" class="form-control-label text-cuino">Email address</label>
+                                <input class="form-control" type="text" value="<?=$this->session->email?>">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="example-text-input" class="form-control-label text-cuino">Creation date</label>
+                                <input class="form-control" type="text" value="<?=$this->session->created_at?>">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="example-text-input" class="form-control-label text-cuino">Role</label>
+                                <input class="form-control" type="text" value="<?=$this->session->role?>">
                               </div>
                             </div>
                           </div>
