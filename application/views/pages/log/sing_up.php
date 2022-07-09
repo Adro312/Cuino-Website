@@ -14,7 +14,6 @@
                     <div class="mb-3">
                       <input type="text" class="form-control form-control-lg" placeholder="Name" name="form-name">
                     </div>
-                    <!--<text style="color:red;" value=""><?php echo $array['errorMessage']; ?></text>-->
                     <div class="mb-3">
                       <input type="text" class="form-control form-control-lg" placeholder="Phone Number" name="form-phoneNumber">
                     </div>
@@ -25,7 +24,8 @@
                       <input type="password" class="form-control form-control-lg" placeholder="Password" name="form-password">
                     </div>
                     <div class="text-center">
-                    <a><button type="submit" class="btn btn-lg btn-cuino-primary btn-lg text-btn-type w-100 mt-4 mb-0">Sign Up</button></a>
+                      <a><button type="submit" class="btn btn-lg btn-cuino-primary btn-lg text-btn-type w-100 mt-4 mb-0">Sign Up</button></a>
+                      <text style="color:red; text-align:center;" value=""><?php echo $errors; ?></text>
                     </div>
                   </form>
                 </div>
