@@ -29,6 +29,46 @@ p, .text-cuino{
 .bg-gradient-primary {
     background-image: linear-gradient(310deg, #064420 0%, #064420 100%);
 }
+.btn-cuino-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #064420;
+    --bs-btn-border-color: #064420;
+    --bs-btn-hover-color: #064420;
+    --bs-btn-hover-bg: #FDFAF6;
+    --bs-btn-hover-border-color: #064420;
+    --bs-btn-focus-shadow-rgb: 80, 97, 194;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #064420;
+    --bs-btn-active-border-color: #064420;
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #064420;
+    --bs-btn-disabled-border-color: #064420;
+}
+a {
+    color: #064420;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+a:hover {
+    color: rgb(6, 68, 32, 0.7);
+    text-decoration: none;
+}
+/* navbar */
+.nav-bar:hover {
+    color: rgb(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+/* Profile */
+.my-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .btn-primary {
     --bs-btn-color: #000;
     --bs-btn-bg: #064420;
@@ -71,6 +111,28 @@ p, .text-cuino{
     width: 70%; margin: 0px auto; background-color: #06442087;
 }
 
+.num-reviews{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+.corazones{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center;
+}
+.num-reviews-total{
+    text-align: center; 
+    color: rgba(0, 0, 0, 0.500); 
+    margin-left: 5px; 
+    align-self: center;
+}
+
 @media screen and (min-width: 1024px) {
     .seccion-boton-logout{
         width: 15%; 
@@ -85,7 +147,7 @@ p, .text-cuino{
         margin: auto;
     }
     .boton-log-out-media-Plus-that-1024xp {
-        font-size: 1.5em; 
+        font-size: 1.2em; 
         margin-top: auto; 
         margin-bottom: auto; 
         margin-right: 0.5em;
@@ -120,6 +182,30 @@ p, .text-cuino{
         margin-top: auto; 
         margin-bottom: auto;
     }
+    .canva-reviews{
+        width: 50%; 
+        height: 10%; 
+        border-radius: 10px;
+    }
+    .comentario{
+        width: 100%; 
+        justify-self: center; 
+        display: flex; 
+        margin-left: auto; 
+        margin-right: auto; 
+        justify-content: center; 
+        padding-left: 20px; 
+        margin-bottom: 40px;
+    }
+    .coment-1024{
+        width: 30%;
+    }
+    .avatar-coment{
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        width: 10%;
+    }
 }
 
 @media screen and (min-width: 953px) and (max-width: 1024px) {
@@ -153,7 +239,7 @@ p, .text-cuino{
     }
     .item-menu-1024{
         font-size: 1.3em; 
-        margin-left: 1.7em;
+        margin-left: 1em;
     }
     .icono-cuino-grande {
         width: 100%;
@@ -164,6 +250,20 @@ p, .text-cuino{
         align-self: center; 
         margin-top: auto; 
         margin-bottom: auto;
+    }
+    .canva-reviews{
+        width: 50%; 
+        height: 10%; 
+        border-radius: 10px;
+    }
+    .coment-1024{
+        width: 30%;
+    }
+    .avatar-coment{
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        width: 10%;
     }
 }
 
@@ -214,6 +314,20 @@ p, .text-cuino{
         align-self: center; 
         margin-top: auto; 
         margin-bottom: auto;
+    }
+    .canva-reviews{
+        width: 50%; 
+        height: 10%; 
+        border-radius: 10px;
+    }
+    .coment-1024{
+        width: 30%;
+    }
+    .avatar-coment{
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        width: 10%;
     }
 }
 
@@ -291,5 +405,35 @@ p, .text-cuino{
     }
     .main-course {
         margin-left: 0;
+    }
+    .my-details {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .canva-reviews-600{
+        width: 100%; 
+        height: 30%; 
+        border-radius: 10px;
+    }
+    .comentario{
+        width: 100%; 
+        justify-self: center; 
+        display: flex; 
+        margin-left: auto; 
+        margin-right: auto; 
+        justify-content: center; 
+        padding-left: 20px; 
+        margin-bottom: 40px;
+    }
+    .coment-600{
+        width: 60%;
+    }
+    .avatar-coment-600{
+        display: flex; 
+        justify-content: center; 
+        align-items: flex-start; 
+        width: 32%;
     }
 }

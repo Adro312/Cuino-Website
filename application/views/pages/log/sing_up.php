@@ -10,21 +10,22 @@
                   <p class="mb-0 login-text-subtitle-">Enter your data to sign up</p>
                 </div>
                 <div class="card-body">
-                  <form role="form">
+                  <form role="form" action="<?=site_url('Register/signUp');?>" method="post">
                     <div class="mb-3">
-                      <input type="text" class="form-control form-control-lg" placeholder="Name" aria-label="Name">
+                      <input type="text" class="form-control form-control-lg" placeholder="Name" name="form-name">
                     </div>
                     <div class="mb-3">
-                      <input type="text" class="form-control form-control-lg" placeholder="Phone Number" aria-label="phone-number">
+                      <input type="text" class="form-control form-control-lg" placeholder="Phone Number" name="form-phoneNumber">
                     </div>
                     <div class="mb-3">
-                      <input type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
+                      <input type="email" class="form-control form-control-lg" placeholder="Email" name="form-email">
                     </div>
                     <div class="mb-3">
-                      <input type="email" class="form-control form-control-lg" placeholder="Password" aria-label="Password">
+                      <input type="password" class="form-control form-control-lg" placeholder="Password" name="form-password">
                     </div>
                     <div class="text-center">
-                    <a href="<?=site_url('Pages/About_Us');?>"><button type="button" class="btn btn-lg btn-primary btn-lg text-btn-type w-100 mt-4 mb-0">Sign Up</button></a>
+                      <a><button type="submit" class="btn btn-lg btn-cuino-primary btn-lg text-btn-type w-100 mt-4 mb-0">Sign Up</button></a>
+                      <text style="color:red; text-align:center;" value=""><?php echo $data; ?></text>
                     </div>
                   </form>
                 </div>

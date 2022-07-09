@@ -9,11 +9,11 @@
                     <img src="<?=base_url('assets/img/logos/LogoLetrasBlancas.png');?>" alt="" class="icono-cuino-grande icono-cuino-grande-600">
                 </a>
                 <ul class="breadcrumb bg-transparent justify-content-center ul-menu-cuino" id="menu-original">
-                    <li><a class="opacity-5 text-white text-btn-type item-menu-768 item-menu-1024 item-menu-600" href="<?=site_url('Pages/About_Us');?>">About Us</a></li>
-                    <li><a class="text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Enterprise');?>">Developing</a></li>
-                    <li><a class="opacity-5 text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Menu');?>">Menu</a></li>
-                    <li><a class="opacity-5 text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Reviews');?>">Reviews</a></li>
-                    <li><a class="opacity-5 text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Profile');?>">Profile</a></li>
+                    <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-768 item-menu-1024 item-menu-600" href="<?=site_url('Pages/About_Us');?>">About Us</a></li>
+                    <li><a class="nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Enterprise');?>">Developing</a></li>
+                    <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Menu');?>">Menu</a></li>
+                    <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Reviews');?>">Reviews</a></li>
+                    <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Profile');?>">Profile</a></li>
                 </ul>
                 <div class="justify-content-lg-end seccion-boton-logout">
                     <a href="<?=site_url('Login');?>">
@@ -61,17 +61,17 @@
                             <div class="justify-content-center" style="color:rgba(0, 0, 0, 0.6);">
                                 <ul class="nav nav-footer justify-content-center">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link text-muted" target="_blank">
+                                    <a href="https://www.linkedin.com/in/luis-enrique-garc%C3%ADa-rodr%C3%ADguez-081300244/" class="nav-link text-muted" target="_blank">
                                       <ion-icon name="logo-linkedin" size="large" style="color:rgba(0, 0, 0, 0.6);"></ion-icon>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link text-muted" target="_blank">
+                                    <a href="https://github.com/Henrriegel" class="nav-link text-muted" target="_blank">
                                       <ion-icon name="logo-github" size="large" style="color:rgba(0, 0, 0, 0.6);"></ion-icon>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link text-muted" target="_blank">
+                                    <a href="https://gitlab.com/henrriegel" class="nav-link text-muted" target="_blank">
                                       <ion-icon name="logo-gitlab" size="large" style="color:rgba(0, 0, 0, 0.6);"></ion-icon>
                                     </a>
                                 </li>
@@ -84,7 +84,7 @@
                       </div>
                       <div class="col-md-3 mt-md-0 mt-4">
                         <div class="card">
-                          <div class="card-header mx-4 p-3 text-center">
+                          <div class="mx-4 p-3 text-center">
                             <div class="text-center">
                               <img src="<?=base_url('assets/img/illustrations/persona5.jpg');?>" alt="" style="border-radius: 50%; width: 100%;">
                             </div>
@@ -116,7 +116,7 @@
                       </div>
                       <div class="col-md-3 mt-md-0 mt-4">
                         <div class="card">
-                          <div class="card-header mx-4 p-3 text-center">
+                          <div class="mx-4 p-3 text-center">
                             <div class="text-center">
                               <img src="<?=base_url('assets/img/illustrations/persona8.jpeg');?>" alt="" style="border-radius: 50%; width: 100%;">
                             </div>
@@ -148,7 +148,7 @@
                       </div>
                       <div class="col-md-3 mt-md-0 mt-4">
                         <div class="card">
-                          <div class="card-header mx-4 p-3 text-center">
+                          <div class="mx-4 p-3 text-center">
                             <div class="text-center">
                               <img src="<?=base_url('assets/img/illustrations/persona7.jpeg');?>" alt="" style="border-radius: 50%; width: 100%;">
                             </div>

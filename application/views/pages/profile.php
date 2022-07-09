@@ -1,4 +1,4 @@
-<div class="min-height-300 position-absolute w-100 " style="background-color: #064420 !important;"></div>
+<div class="min-height-300 position-absolute w-100" style="background-color: #064420 !important;"></div>
 
 <main class="main-content position-relative border-radius-lg ">
     <!-- Navbar -->
@@ -9,19 +9,19 @@
                     <img src="<?=base_url('assets/img/logos/LogoLetrasBlancas.png');?>" alt="" class="icono-cuino-grande icono-cuino-grande-600">
                 </a>
                 <ul class="breadcrumb bg-transparent justify-content-center ul-menu-cuino" id="menu-original">
-                    <li><a class="opacity-5 text-white text-btn-type item-menu-768 item-menu-1024 item-menu-600" href="<?=site_url('Pages/About_Us');?>">About Us</a></li>
-                    <li><a class="opacity-5 text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Enterprise');?>">Developing</a></li>
-                    <li><a class="opacity-5 text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Menu');?>">Menu</a></li>
-                    <li><a class="opacity-5 text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Reviews');?>">Reviews</a></li>
-                    <li><a class="text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Profile');?>">Profile</a></li>
+                    <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-768 item-menu-1024 item-menu-600" href="<?=site_url('Pages/About_Us');?>">About Us</a></li>
+                    <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Enterprise');?>">Developing</a></li>
+                    <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Menu');?>">Menu</a></li>
+                    <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Reviews');?>">Reviews</a></li>
+                    <li><a class="nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Profile');?>">Profile</a></li>
                 </ul>
                 <div class="justify-content-lg-end seccion-boton-logout">
-                    <a href="<?=site_url('Login');?>">
-                        <button class="boton-salir boton-salir-600">
+                    <form action="<?=site_url('Pages/Profile/logOut');?>">
+                        <button type="submit" class="boton-salir boton-salir-600">
                             <ion-icon name="log-out-outline" class="icon-boton-log-out-media-Plus-that-1024xp icon-boton-log-out-media-Plus-that-1024xp icon-boton-log-out-media-Plus-that-769px" id="icono-log-out"></ion-icon>
                             <p class="boton-log-out-media-1024xp boton-log-out-media-Plus-that-1024xp boton-log-out-media-769px">Log Out</p>
                         </button>
-                    </a>
+                    </form>
                 </div>
             </nav>
         </div>
@@ -34,14 +34,68 @@
         <div class="col-12">
           <div class="card mb-4">
             <div class="card-header pb-0">
-              <h2 style="text-align: center; color: rgba(0, 0, 0, 0.800);">Titulo de la pagina</h2>
+              <h2 style="text-align: center; color: rgba(0, 0, 0, 0.800);">Profile</h2>
               <hr style="border: 1px solid #064420; width: 70%; margin: 30px auto 0px auto;">
             </div>
             <div class="card-header pb-0">
-                <!-- 
-                    Aqui poner todo el contenido que va a ir en la pagina
-                 -->
-                 <h1>Profile</h1>
+              <!-- 
+                  Aqui poner todo el contenido que va a ir en la pagina
+                -->
+              <div class="main-content position-relative max-height-vh-100 h-100">
+                <div class="container-fluid py-4">
+                  <div class="my-details"> <!-- Centra el contenido del formulario -->
+                    <div class="col-md-8">
+                      <div class="card">
+                        <div class="card-body">
+                          <p class="text-uppercase fw-bold text-lg">User Information</p>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="example-text-input" class="form-control-label text-cuino">Name</label>
+                                <input class="form-control" type="text" value="<?=$this->session->name?>">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="example-text-input" class="form-control-label text-cuino">Cellphone</label>
+                                <input class="form-control" type="text" value="<?=$this->session->cellphone?>">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="example-text-input" class="form-control-label text-cuino">Email address</label>
+                                <input class="form-control" type="text" value="<?=$this->session->email?>">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="example-text-input" class="form-control-label text-cuino">Creation date</label>
+                                <input class="form-control" type="text" value="<?=$this->session->created_at?>">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="example-text-input" class="form-control-label text-cuino">Role</label>
+                                <input class="form-control" type="text" value="<?=$this->session->role?>">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -53,3 +107,4 @@
     </div>
     <!-- End Content  -->
 </main>
+

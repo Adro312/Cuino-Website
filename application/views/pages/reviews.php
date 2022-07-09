@@ -9,11 +9,11 @@
                   <img src="<?=base_url('assets/img/logos/LogoLetrasBlancas.png');?>" alt="" class="icono-cuino-grande icono-cuino-grande-600">
               </a>
               <ul class="breadcrumb bg-transparent justify-content-center ul-menu-cuino" id="menu-original">
-                  <li><a class="opacity-5 text-white text-btn-type item-menu-768 item-menu-1024 item-menu-600" href="<?=site_url('Pages/About_Us');?>">About Us</a></li>
-                  <li><a class="opacity-5 text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Enterprise');?>">Developing</a></li>
-                  <li><a class="opacity-5 text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Menu');?>">Menu</a></li>
-                  <li><a class="text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Reviews');?>">Reviews</a></li>
-                  <li><a class="opacity-5 text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Profile');?>">Profile</a></li>
+                  <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-768 item-menu-1024 item-menu-600" href="<?=site_url('Pages/About_Us');?>">About Us</a></li>
+                  <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Enterprise');?>">Developing</a></li>
+                  <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Menu');?>">Menu</a></li>
+                  <li><a class="nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Reviews');?>">Reviews</a></li>
+                  <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Profile');?>">Profile</a></li>
               </ul>
               <div class="justify-content-lg-end seccion-boton-logout">
                   <a href="<?=site_url('Login');?>">
@@ -38,31 +38,31 @@
             <hr style="border: 1px solid #064420; width: 70%; margin: 30px auto 0px auto;">
           </div>
           <div class="card-header">
-            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+            <div class="num-reviews">
               <h1 style="text-align: center; color: rgba(0, 0, 0, 0.800);">4,7</h1>
-              <div style="align-self: flex-end; margin-left: 10px;">
+              <div class="corazones">
                 <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
                 <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
                 <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
                 <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
                 <ion-icon name="heart-half" style="color: #A5F04F;"></ion-icon>
               </div>
-              <h6 style="text-align: center; color: rgba(0, 0, 0, 0.500); margin-left: 5px; align-self: flex-end;">1315 reviews</h6>
+              <h6 class="num-reviews-total">1315 reviews</h6>
             </div>
 
             <figure style="width: 100%; display: flex; justify-content: center;">
-              <div style="width: 50%; height: 10%; border-radius: 10px;">
+              <div class="canva-reviews canva-reviews-600">
                 <canvas id="myChart"></canvas>
               </div>
             </figure>
 
             <br>
 
-            <div style="width: 100%; justify-self: center; display: flex; margin-left: auto; margin-right: auto; justify-content: center; padding-left: 20px; margin-bottom: 40px;">
-              <div class="" style="display: flex; justify-content: center; align-items: center; width: 10%;">
+            <div class="comentario comentario-600">
+              <div class="avatar-coment avatar-coment-600">
                 <img src="<?= base_url('assets/img/illustrations/persona9.jpg'); ?>" class="avatar avatar-xl me-3">
               </div>
-              <div class="flex-column justify-content-center" style="width: 30%;">
+              <div class="flex-column justify-content-center coment-600 coment-1024">
                 <h6 class="" style="width: 100%;">
                   <span class="font-weight-bold">Elizabeth Aguilar Martinez</span>
                 </h6>
@@ -84,11 +84,11 @@
               </div>
             </div>
 
-            <div style="width: 100%; justify-self: center; display: flex; margin-left: auto; margin-right: auto; justify-content: center; padding-left: 20px; margin-bottom: 40px;">
-              <div class="" style="display: flex; justify-content: center; align-items: center; width: 10%;">
+            <div class="comentario comentario-600">
+              <div class="avatar-coment avatar-coment-600">
                 <img src="<?= base_url('assets/img/illustrations/persona1.png'); ?>" class="avatar avatar-xl me-3">
               </div>
-              <div class="flex-column justify-content-center" style="width: 30%;">
+              <div class="flex-column justify-content-center coment-600 coment-1024">
                 <h6 class="" style="width: 100%;">
                   <span class="font-weight-bold">Bryant Hernandez Hernandez</span>
                 </h6>
@@ -107,11 +107,11 @@
               </div>
             </div>
 
-            <div style="width: 100%; justify-self: center; display: flex; margin-left: auto; margin-right: auto; justify-content: center; padding-left: 20px; margin-bottom: 40px;">
-              <div class="" style="display: flex; justify-content: center; align-items: center; width: 10%;">
+            <div class="comentario comentario-600">
+              <div class="avatar-coment avatar-coment-600">
                 <img src="<?= base_url('assets/img/illustrations/persona10.jpg'); ?>" class="avatar avatar-xl me-3">
               </div>
-              <div class="flex-column justify-content-center" style="width: 30%;">
+              <div class="flex-column justify-content-center coment-600 coment-1024">
                 <h6 class="" style="width: 100%;">
                   <span class="font-weight-bold">Karla Valeria Guerrero Anguiano</span>
                 </h6>
@@ -133,11 +133,11 @@
               </div>
             </div>
 
-            <div style="width: 100%; justify-self: center; display: flex; margin-left: auto; margin-right: auto; justify-content: center; padding-left: 20px; margin-bottom: 40px;">
-              <div class="" style="display: flex; justify-content: center; align-items: center; width: 10%;">
+            <div class="comentario comentario-600">
+              <div class="avatar-coment avatar-coment-600">
                 <img src="<?= base_url('assets/img/illustrations/persona2.png'); ?>" class="avatar avatar-xl me-3">
               </div>
-              <div class="flex-column justify-content-center" style="width: 30%;">
+              <div class="flex-column justify-content-center coment-600 coment-1024">
                 <h6 class="" style="width: 100%;">
                   <span class="font-weight-bold">Kevin Dilan Rangel Campos</span>
                 </h6>
@@ -154,11 +154,11 @@
               </div>
             </div>
 
-            <div style="width: 100%; justify-self: center; display: flex; margin-left: auto; margin-right: auto; justify-content: center; padding-left: 20px; margin-bottom: 40px;">
-              <div class="" style="display: flex; justify-content: center; align-items: center; width: 10%;">
+            <div class="comentario comentario-600">
+              <div class="avatar-coment avatar-coment-600">
                 <img src="<?= base_url('assets/img/illustrations/persona11.jpg'); ?>" class="avatar avatar-xl me-3">
               </div>
-              <div class="flex-column justify-content-center" style="width: 30%;">
+              <div class="flex-column justify-content-center coment-600 coment-1024">
                 <h6 class="" style="width: 100%;">
                   <span class="font-weight-bold">Diana Palacios Rodriguez</span>
                 </h6>
@@ -180,11 +180,11 @@
               </div>
             </div>
 
-            <div style="width: 100%; justify-self: center; display: flex; margin-left: auto; margin-right: auto; justify-content: center; padding-left: 20px; margin-bottom: 40px;">
-              <div class="" style="display: flex; justify-content: center; align-items: center; width: 10%;">
+            <div class="comentario comentario-600">
+              <div class="avatar-coment avatar-coment-600">
                 <img src="<?= base_url('assets/img/illustrations/persona3.png'); ?>" class="avatar avatar-xl me-3">
               </div>
-              <div class="flex-column justify-content-center" style="width: 30%;">
+              <div class="flex-column justify-content-center coment-600 coment-1024">
                 <h6 class="" style="width: 100%;">
                   <span class="font-weight-bold">Sebastian Vazquez Ramos</span>
                 </h6>
@@ -200,11 +200,11 @@
               </div>
             </div>
 
-            <div style="width: 100%; justify-self: center; display: flex; margin-left: auto; margin-right: auto; justify-content: center; padding-left: 20px; margin-bottom: 40px;">
-              <div class="" style="display: flex; justify-content: center; align-items: center; width: 10%;">
+            <div class="comentario comentario-600">
+              <div class="avatar-coment avatar-coment-600">
                 <img src="<?= base_url('assets/img/illustrations/persona4.png'); ?>" class="avatar avatar-xl me-3">
               </div>
-              <div class="flex-column justify-content-center" style="width: 30%;">
+              <div class="flex-column justify-content-center coment-600 coment-1024">
                 <h6 class="" style="width: 100%;">
                   <span class="font-weight-bold">Miguel Angel Hernandez Gonzalez</span>
                 </h6>
@@ -225,11 +225,11 @@
               </div>
             </div>
 
-            <div style="width: 100%; justify-self: center; display: flex; margin-left: auto; margin-right: auto; justify-content: center; padding-left: 20px; margin-bottom: 40px;">
-              <div class="" style="display: flex; justify-content: center; align-items: center; width: 10%;">
+            <div class="comentario comentario-600">
+              <div class="avatar-coment avatar-coment-600">
                 <img src="<?= base_url('assets/img/illustrations/persona12.png'); ?>" class="avatar avatar-xl me-3">
               </div>
-              <div class="flex-column justify-content-center" style="width: 30%;">
+              <div class="flex-column justify-content-center coment-600 coment-1024">
                 <h6 class="" style="width: 100%;">
                   <span class="font-weight-bold">Sergio Samano Cortes</span>
                 </h6>

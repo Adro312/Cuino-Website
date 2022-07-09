@@ -10,15 +10,16 @@
                   <p class="mb-0 login-text-subtitle-">Enter your email and password to sign in</p>
                 </div>
                 <div class="card-body">
-                  <form role="form">
+                  <form role="form" action="<?=site_url('Login/login');?>" method="post">
                     <div class="mb-3">
-                      <input type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
+                      <input name="form-email" type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
                     </div>
                     <div class="mb-3">
-                      <input type="email" class="form-control form-control-lg" placeholder="Password" aria-label="Password">
+                      <input name="form-password" type="password" class="form-control form-control-lg" placeholder="Password" aria-label="Password">
                     </div>
                     <div class="text-center">
-                      <a href="<?=site_url('Pages/About_Us');?>"><button type="button" class="btn btn-lg btn-primary btn-lg text-btn-type w-100 mt-4 mb-0">Sign in</button></a>
+                      <a><button type="submit" class="btn btn-lg btn-cuino-primary btn-lg text-btn-type w-100 mt-4 mb-0">Sign in</button></a>
+                      <text style="color:red; text-align:center;" value=""><?php echo $data; ?></text>
                     </div>
                   </form>
                 </div>
