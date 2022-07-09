@@ -45,6 +45,19 @@ p, .text-cuino{
     --bs-btn-disabled-bg: #064420;
     --bs-btn-disabled-border-color: #064420;
 }
+
+.plato {
+    background-color: #E4EFE7;
+}
+
+.main-course {
+    margin-left: 4rem;
+}
+
+.carrito {
+    border: solid red 2px;
+}
+
 .text-primary-own {
     color: #064420;
 }
@@ -275,5 +288,8 @@ p, .text-cuino{
         width: 100%; 
         height: 100%;
         position: absolute;
+    }
+    .main-course {
+        margin-left: 0;
     }
 }

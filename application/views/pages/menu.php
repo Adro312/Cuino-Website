@@ -37,12 +37,319 @@
               <h2 style="text-align: center; color: rgba(0, 0, 0, 0.800);">Titulo de la pagina</h2>
               <hr style="border: 1px solid #064420; width: 70%; margin: 30px auto 0px auto;">
             </div>
-            <div class="card-header pb-0">
-                <!-- 
-                    Aqui poner todo el contenido que va a ir en la pagina
-                 -->
-                 <h1>Menu</h1>
-            </div>
+            <section class="row">
+              <div class="card-header pb-0 col ms-3">
+                  <!--
+                      Aqui poner todo el contenido que va a ir en la pagina
+                   -->
+                   <div class="main-course">
+                    <h1 class="">Entries</h1>
+                    <div class="card mb-3 plato" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4 my-auto">
+                          <img
+                            src="<?=base_url('assets/img/comida/entry1.jpg');?>"
+                            class="img-fluid rounded"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Tomato Soup</h5>
+                            <p class="card-text">
+                              Ingredients: Tomato, cilantro.
+                            </p>
+                            <div class="row">
+                              <p class="card-text col fs-5">
+                                $7.00
+                              </p>
+                              <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3 plato" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4 my-auto">
+                          <img
+                            src="<?=base_url('assets/img/comida/entry2.jpg');?>"
+                            class="img-fluid rounded"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Thai Fish Cakes</h5>
+                            <p class="card-text">
+                              Ingredients: Fish, onion, eggs.
+                            </p>
+                            <div class="row">
+                              <p class="card-text col fs-5">
+                                $8.50
+                              </p>
+                              <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3 plato" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4 my-auto">
+                          <img
+                            src="<?=base_url('assets/img/comida/entry3.jpg');?>"
+                            class="img-fluid rounded"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Garlic Bread</h5>
+                            <p class="card-text">
+                              Ingredients: Garlic, bread, cilantro, vegetable oil.
+                            </p>
+                            <div class="row">
+                              <p class="card-text col fs-5">
+                                $5.50
+                              </p>
+                              <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="main-course">
+                    <h1 class="">Main Course</h1>
+                    <div class="card mb-3 plato" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4 my-auto">
+                          <img
+                            src="<?=base_url('assets/img/comida/plato1.jpg');?>"
+                            class="img-fluid rounded"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Le Poulet</h5>
+                            <p class="card-text">
+                              Ingredients: Chicken, broccoli, lettuce, carrot, rice, cauliflower and tomato.
+                            </p>
+                            <div class="row">
+                              <p class="card-text col fs-5">
+                                $14.00
+                              </p>
+                              <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3 plato" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4 my-auto">
+                          <img
+                            src="<?=base_url('assets/img/comida/plato2.jpg');?>"
+                            class="img-fluid rounded"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Salad</h5>
+                            <p class="card-text">
+                              Ingredients: Tomato, lettuce, onion, dressing.
+                            </p>
+                            <div class="row">
+                              <p class="card-text col fs-5">
+                                $9.00
+                              </p>
+                              <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3 plato" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4 my-auto">
+                          <img
+                            src="<?=base_url('assets/img/comida/plato3.jpg');?>"
+                            class="img-fluid rounded"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Tuna Salad</h5>
+                            <p class="card-text">
+                              Ingredients: Tuna, tomato, lettuce, onion, dressing.
+                            </p>
+                            <div class="row">
+                              <p class="card-text col fs-5">
+                                $12.00
+                              </p>
+                              <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="main-course">
+                    <h1 class="">Desserts</h1>
+                    <div class="card mb-3 plato" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4 my-auto">
+                          <img
+                            src="<?=base_url('assets/img/comida/postre1.jpg');?>"
+                            class="img-fluid rounded"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Fruits</h5>
+                            <p class="card-text">
+                              Ingredients: Orange, strawberry, banana, kiwi, whipped cream.
+                            </p>
+                            <div class="row">
+                              <p class="card-text col fs-5">
+                                $5.00
+                              </p>
+                              <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3 plato" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4 my-auto">
+                          <img
+                            src="<?=base_url('assets/img/comida/postre3.jpeg');?>"
+                            class="img-fluid rounded"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Rice Pudding</h5>
+                            <p class="card-text">
+                              Ingredients: Rice, milk, cinnamon.
+                            </p>
+                            <div class="row">
+                              <p class="card-text col fs-5">
+                                $4.00
+                              </p>
+                              <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3 plato" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4 my-auto">
+                          <img
+                            src="<?=base_url('assets/img/comida/postre2.webp');?>"
+                            class="img-fluid rounded"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Red Berries</h5>
+                            <p class="card-text">
+                              Ingredients: Blueberry, raspberry, strawberry, blackberry, chantilly.
+                            </p>
+                            <div class="row">
+                              <p class="card-text col fs-5">
+                                $4.50
+                              </p>
+                              <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="main-course">
+                    <h1 class="">Drinks</h1>
+                    <div class="card mb-3 plato" style="max-width: 450px;">
+                      <div class="row g-0">
+                        <div class="col-md-4 my-auto">
+                          <img
+                            src="<?=base_url('assets/img/comida/drink1.jpg');?>"
+                            class="img-fluid rounded"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Strawberry Juice</h5>
+                            <p class="card-text">
+                              Ingredients: <br> Strawberry, ice, water.
+                            </p>
+                            <div class="row">
+                              <p class="card-text col fs-5">
+                                $7.00
+                              </p>
+                              <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3 plato" style="max-width: 450px;">
+                      <div class="row g-0">
+                        <div class="col-md-4 my-auto">
+                          <img
+                            src="<?=base_url('assets/img/comida/drink2.jpg');?>"
+                            class="img-fluid rounded"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Pineapple Juice</h5>
+                            <p class="card-text">
+                              Ingredients: <br> Pineapple, ice, water.
+                            </p>
+                            <div class="row">
+                              <p class="card-text col fs-5">
+                                $7.00
+                              </p>
+                              <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3 plato" style="max-width: 450px;">
+                      <div class="row g-0">
+                        <div class="col-md-4 my-auto">
+                          <img
+                            src="<?=base_url('assets/img/comida/drink3.jpg');?>"
+                            class="img-fluid rounded"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Berries Juice</h5>
+                            <p class="card-text">
+                              Ingredients: <br> Red berries, ice, water, plums.
+                            </p>
+                            <div class="row">
+                              <p class="card-text col fs-5">
+                                $7.00
+                              </p>
+                              <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col carrito me-3">
+                Espacio para el carrito
+              </div>
+            </section>
           </div>
         </div>
       </div>
