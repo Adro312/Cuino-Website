@@ -25,7 +25,7 @@
                     </div>
                     <div class="text-center">
                       <a><button type="submit" class="btn btn-lg btn-cuino-primary btn-lg text-btn-type w-100 mt-4 mb-0">Sign Up</button></a>
-                      <text style="color:red; text-align:center;" value=""><?php echo $errors; ?></text>
+                      <text style="color:red; text-align:center;" value=""><?php echo $data; ?></text>
                     </div>
                   </form>
                 </div>

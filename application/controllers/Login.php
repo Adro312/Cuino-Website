@@ -6,7 +6,7 @@ class Login extends CI_Controller {
 	public function index($errors = null) {
 		$array = [
 			'page' => 'pages/log/sing_in.php',
-			'errors' => $errors,
+			'data' => $errors,
 		];
 		$this->load->view('layout', $array);
 		$this->load->helper('url');
