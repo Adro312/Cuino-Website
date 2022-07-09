@@ -6,7 +6,7 @@
 </head>
 <body>
     <!-- Contenido que mostrar -->
-    <?=$this->load->view($page,null,TRUE);?>
+    <?=isset($errors) ? $this->load->view($page,$errors,TRUE) : $this->load->view($page,null,TRUE) ?>
 
     <!-- Importar los script que se usaran -->
     <?=$this->load->view('layouts/scripts.php',null,TRUE);?>
