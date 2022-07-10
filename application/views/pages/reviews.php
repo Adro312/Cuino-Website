@@ -41,7 +41,7 @@
             <hr style="border: 1px solid #064420; width: 70%; margin: 30px auto 0px auto;">
           </div>
           <div class="card-header">
-            <div class="num-reviews">
+            <!-- <div class="num-reviews">
               <h1 style="text-align: center; color: rgba(0, 0, 0, 0.800);">4,7</h1>
               <div class="corazones">
                 <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
@@ -59,14 +59,13 @@
               </div>
             </figure>
 
-            <br>
-
+            <br> -->
             <?php foreach ($data['list'] as $review) { ?>
             <div class="comentario comentario-600">
               <div class="avatar-coment avatar-coment-600">
                 <?php 
-                  $random = strval(rand(9, 11));
-                  $imgUrl ='assets/img/illustrations/persona'.$random.'.jpg';
+                  $random = strval(rand(9, 12));
+                  $imgUrl ='assets/img/illustrations/persona'.$random.'.png';
                 ?>
                 <img src="<?= base_url($imgUrl); ?>" class="avatar avatar-xl me-3">
               </div>
