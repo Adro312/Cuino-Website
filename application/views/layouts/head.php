@@ -25,3 +25,4 @@
 <link id="pagestyle" href="<?=base_url('assets/css/argon-dashboard.css?v=2.0.3');?>" rel="stylesheet" />
 <!-- Own CSS fIle  -->
 <link rel="stylesheet" href="<?=base_url('assets/css/myStyles.css');?>">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">

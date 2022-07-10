@@ -54,7 +54,7 @@
                         <div class="card">
                           <div class="mx-4 p-3 text-center">
                             <div class="text-center">
-                              <img src="<?=base_url('assets/img/illustrations/persona6.jpg');?>" alt="" style="border-radius: 50%; width: 100%;">
+                              <img src="<?=base_url('assets/img/illustrations/persona6.png');?>" alt="" style="border-radius: 50%; width: 100%;">
                             </div>
                           </div>
                           <div class="card-body pt-0 p-3 text-center" style="color:rgba(0, 0, 0, 0.6);">
@@ -86,7 +86,7 @@
                         <div class="card">
                           <div class="mx-4 p-3 text-center">
                             <div class="text-center">
-                              <img src="<?=base_url('assets/img/illustrations/persona5.jpg');?>" alt="" style="border-radius: 50%; width: 100%;">
+                              <img src="<?=base_url('assets/img/illustrations/persona5.png');?>" alt="" style="border-radius: 50%; width: 100%;">
                             </div>
                           </div>
                           <div class="card-body pt-0 p-3 text-center" style="color:rgba(0, 0, 0, 0.6);">
@@ -118,7 +118,7 @@
                         <div class="card">
                           <div class="mx-4 p-3 text-center">
                             <div class="text-center">
-                              <img src="<?=base_url('assets/img/illustrations/persona8.jpeg');?>" alt="" style="border-radius: 50%; width: 100%;">
+                              <img src="<?=base_url('assets/img/illustrations/persona8.png');?>" alt="" style="border-radius: 50%; width: 100%;">
                             </div>
                           </div>
                           <div class="card-body pt-0 p-3 text-center" style="color:rgba(0, 0, 0, 0.6);">
@@ -150,7 +150,7 @@
                         <div class="card">
                           <div class="mx-4 p-3 text-center">
                             <div class="text-center">
-                              <img src="<?=base_url('assets/img/illustrations/persona7.jpeg');?>" alt="" style="border-radius: 50%; width: 100%;">
+                              <img src="<?=base_url('assets/img/illustrations/persona7.png');?>" alt="" style="border-radius: 50%; width: 100%;">
                             </div>
                           </div>
                           <div class="card-body pt-0 p-3 text-center" style="color:rgba(0, 0, 0, 0.6);">
