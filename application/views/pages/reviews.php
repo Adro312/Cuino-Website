@@ -1,5 +1,8 @@
 <div class="min-height-300 position-absolute w-100 " style="background-color: #064420 !important;"></div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+
 <main class="main-content position-relative border-radius-lg ">
   <!-- Navbar -->
   <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl mt-4" id="navbarBlur" data-scroll="false">
@@ -58,195 +61,77 @@
 
             <br>
 
+            <?php foreach ($data['list'] as $review) { ?>
             <div class="comentario comentario-600">
               <div class="avatar-coment avatar-coment-600">
-                <img src="<?= base_url('assets/img/illustrations/persona9.jpg'); ?>" class="avatar avatar-xl me-3">
+                <?php 
+                  $random = strval(rand(9, 11));
+                  $imgUrl ='assets/img/illustrations/persona'.$random.'.jpg';
+                ?>
+                <img src="<?= base_url($imgUrl); ?>" class="avatar avatar-xl me-3">
               </div>
               <div class="flex-column justify-content-center coment-600 coment-1024">
                 <h6 class="" style="width: 100%;">
-                  <span class="font-weight-bold">Elizabeth Aguilar Martinez</span>
+                  <span class="font-weight-bold"><?php if(isset($review['userName'])) { echo($review['userName']); }?></span>
                 </h6>
                 <div style="align-self: flex-end;">
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart-half" style="color: #A5F04F;"></ion-icon>
+                <div id="rateYo<?php if(isset($review['id'])) { echo($review['id']);}?>"
+                  data-rateyo-half-star="true"
+                  data-rateyo-read-only="true"
+                  data-rateyo-rating="<?php if(isset($review['score'])) { echo($review['score']);}?>"></div>
                 </div>
+                <script>
+                    $(function () {
+                        $("#rateYo<?=$review['id']?>").rateYo({});
+                        $rateYo.rateYo("destroy");
+                    });
+                </script>
                 <p class="text-xs text-secondary mb-0" style="width: 100%; text-align: justify;">
-                  “La amistad verdadera se basaría en el bien, en la virtud. Y en opinión 
-                  de este gran filósofo, sólo puede darse entre personas que se desean el 
-                  bien por sí mismos, sin ningún tipo de interés; por ello, aunque las 
-                  circunstancias varíen, ella permanece. “La amistad perfecta es la de los 
-                  buenos y la de aquellos que se asemejan por la virtud. Ellos se desean 
-                  mutuamente el bien en el mismo sentido.“
+                  <?php if(isset($review['comment'])) { echo($review['comment']);}?>
                 </p>
               </div>
+            </div>
+            <?php }?>
+
+            <?php if (isset($this->session->id) AND !$data['exists']){?>
+            <div class="card-header pb-0">
+              <h3 style="text-align: center; color: rgba(0, 0, 0, 0.800);">Rate us!</h3>
+              <hr style="border: 1px solid #064420; width: 70%; margin: 30px auto 0px auto;">
             </div>
 
             <div class="comentario comentario-600">
-              <div class="avatar-coment avatar-coment-600">
-                <img src="<?= base_url('assets/img/illustrations/persona1.png'); ?>" class="avatar avatar-xl me-3">
-              </div>
-              <div class="flex-column justify-content-center coment-600 coment-1024">
-                <h6 class="" style="width: 100%;">
-                  <span class="font-weight-bold">Bryant Hernandez Hernandez</span>
-                </h6>
-                <div style="align-self: flex-end;">
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
+              <form role="form" action="<?=site_url('Pages/Reviews/postReview');?>" method="post">
+                <div class="mb-3">
+                  <input type="text" class="form-control form-control-lg" placeholder="Name" name="form-name" value="<?=$this->session->name?>" readonly>
                 </div>
-                <p class="text-xs text-secondary mb-0" style="width: 100%; text-align: justify;">
-                  “ Existe un adjetivo que solemos colocar junto a la palabra amistad: 
-                  “Verdadera”.  Parece que necesitamos diferenciar ésta de otros tipos. 
-                  Según Aristóteles, estos tipos serían la amistad  por interés y por placer.”
-                </p>
-              </div>
-            </div>
 
-            <div class="comentario comentario-600">
-              <div class="avatar-coment avatar-coment-600">
-                <img src="<?= base_url('assets/img/illustrations/persona10.jpg'); ?>" class="avatar avatar-xl me-3">
-              </div>
-              <div class="flex-column justify-content-center coment-600 coment-1024">
-                <h6 class="" style="width: 100%;">
-                  <span class="font-weight-bold">Karla Valeria Guerrero Anguiano</span>
-                </h6>
-                <div style="align-self: flex-end;">
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart-half" style="color: #A5F04F;"></ion-icon>
+                <div class="form-rateYo" id="form-rating"
+                  data-rateyo-num-stars="5"
+                  data-rateyo-half-star="true">
                 </div>
-                <p class="text-xs text-secondary mb-0" style="width: 100%; text-align: justify;">
-                  “La amistad verdadera se basaría en el bien, en la virtud. Y en opinión 
-                  de este gran filósofo, sólo puede darse entre personas que se desean el 
-                  bien por sí mismos, sin ningún tipo de interés; por ello, aunque las 
-                  circunstancias varíen, ella permanece. “La amistad perfecta es la de los 
-                  buenos y la de aquellos que se asemejan por la virtud. Ellos se desean 
-                  mutuamente el bien en el mismo sentido.“
-                </p>
-              </div>
-            </div>
+                <h4 style="color: rgba(0, 0, 0, 0.800);" class='result'> 0</h4>
+                <input type="hidden" name="form-rating">
+                <script>
+                    $(function () {
+                        $(".form-rateYo").rateYo().on("rateyo.change", function (e, data) {
+                            var rating = data.rating;
+                            $(this).parent().find('.score').text('Score :'+ $(this).attr('data-rateyo-score'));
+                            $(this).parent().find('.result').text('Rating :'+ rating);
+                            $(this).parent().find('input[name=form-rating]').val(rating); //add rating value to input field
+                        });
+                    });
+                </script>
 
-            <div class="comentario comentario-600">
-              <div class="avatar-coment avatar-coment-600">
-                <img src="<?= base_url('assets/img/illustrations/persona2.png'); ?>" class="avatar avatar-xl me-3">
-              </div>
-              <div class="flex-column justify-content-center coment-600 coment-1024">
-                <h6 class="" style="width: 100%;">
-                  <span class="font-weight-bold">Kevin Dilan Rangel Campos</span>
-                </h6>
-                <div style="align-self: flex-end;">
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
+                <div class="mb-3">
+                  <textarea class="form-control form-control-lg" placeholder="Comment" name="form-comment" cols="30" rows="4"></textarea>
                 </div>
-                <p class="text-xs text-secondary mb-0" style="width: 100%; text-align: justify;">
-                  “ Existe un adjetivo que solemos colocar junto a la palabra amistad: 
-                  “Verdadera”.  Parece que necesitamos diferenciar ésta de otros tipos. 
-                  Según Aristóteles, estos tipos serían la amistad  por interés y por placer.”
-                </p>
-              </div>
-            </div>
-
-            <div class="comentario comentario-600">
-              <div class="avatar-coment avatar-coment-600">
-                <img src="<?= base_url('assets/img/illustrations/persona11.jpg'); ?>" class="avatar avatar-xl me-3">
-              </div>
-              <div class="flex-column justify-content-center coment-600 coment-1024">
-                <h6 class="" style="width: 100%;">
-                  <span class="font-weight-bold">Diana Palacios Rodriguez</span>
-                </h6>
-                <div style="align-self: flex-end;">
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart-half" style="color: #A5F04F;"></ion-icon>
+                <div class="text-center">
+                  <a><button type="submit" class="btn btn-lg btn-cuino-primary btn-lg text-btn-type w-100 mt-4 mb-0">Rate</button></a>
+                  <text style="color:red; text-align:center;" value=""><?=$data['errors']?></text>
                 </div>
-                <p class="text-xs text-secondary mb-0" style="width: 100%; text-align: justify;">
-                  “La amistad verdadera se basaría en el bien, en la virtud. Y en opinión 
-                  de este gran filósofo, sólo puede darse entre personas que se desean el 
-                  bien por sí mismos, sin ningún tipo de interés; por ello, aunque las 
-                  circunstancias varíen, ella permanece. “La amistad perfecta es la de los 
-                  buenos y la de aquellos que se asemejan por la virtud. Ellos se desean 
-                  mutuamente el bien en el mismo sentido.“
-                </p>
-              </div>
+              </form>
             </div>
-
-            <div class="comentario comentario-600">
-              <div class="avatar-coment avatar-coment-600">
-                <img src="<?= base_url('assets/img/illustrations/persona3.png'); ?>" class="avatar avatar-xl me-3">
-              </div>
-              <div class="flex-column justify-content-center coment-600 coment-1024">
-                <h6 class="" style="width: 100%;">
-                  <span class="font-weight-bold">Sebastian Vazquez Ramos</span>
-                </h6>
-                <div style="align-self: flex-end;">
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                </div>
-                <p class="text-xs text-secondary mb-0" style="width: 100%; text-align: justify;">
-                  “ Existe un adjetivo que solemos colocar junto a la palabra amistad: 
-                  “Verdadera”.  Parece que necesitamos diferenciar ésta de otros tipos. 
-                  Según Aristóteles, estos tipos serían la amistad  por interés y por placer.”
-                </p>
-              </div>
-            </div>
-
-            <div class="comentario comentario-600">
-              <div class="avatar-coment avatar-coment-600">
-                <img src="<?= base_url('assets/img/illustrations/persona4.png'); ?>" class="avatar avatar-xl me-3">
-              </div>
-              <div class="flex-column justify-content-center coment-600 coment-1024">
-                <h6 class="" style="width: 100%;">
-                  <span class="font-weight-bold">Miguel Angel Hernandez Gonzalez</span>
-                </h6>
-                <div style="align-self: flex-end;">
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart-half" style="color: #A5F04F;"></ion-icon>
-                </div>
-                <p class="text-xs text-secondary mb-0" style="width: 100%; text-align: justify;">
-                  “La amistad verdadera se basaría en el bien, en la virtud. Y en opinión 
-                  de este gran filósofo, sólo puede darse entre personas que se desean el 
-                  bien por sí mismos, sin ningún tipo de interés; por ello, aunque las 
-                  circunstancias varíen, ella permanece. “La amistad perfecta es la de los 
-                  buenos y la de aquellos que se asemejan por la virtud. Ellos se desean 
-                  mutuamente el bien en el mismo sentido.“
-                </p>
-              </div>
-            </div>
-
-            <div class="comentario comentario-600">
-              <div class="avatar-coment avatar-coment-600">
-                <img src="<?= base_url('assets/img/illustrations/persona12.png'); ?>" class="avatar avatar-xl me-3">
-              </div>
-              <div class="flex-column justify-content-center coment-600 coment-1024">
-                <h6 class="" style="width: 100%;">
-                  <span class="font-weight-bold">Sergio Samano Cortes</span>
-                </h6>
-                <div style="align-self: flex-end;">
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                  <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                </div>
-                <p class="text-xs text-secondary mb-0" style="width: 100%; text-align: justify;">
-                  “ Existe un adjetivo que solemos colocar junto a la palabra amistad: 
-                  “Verdadera”.  Parece que necesitamos diferenciar ésta de otros tipos. 
-                  Según Aristóteles, estos tipos serían la amistad  por interés y por placer.”
-                </p>
-              </div>
-            </div>
+            <?php }?>
           </div>
         </div>
       </div>

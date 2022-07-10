@@ -4,11 +4,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Login extends CI_Controller {
 
 	public function index($errors = null) {
-		$array = [
-			'page' => 'pages/log/sing_in.php',
-			'data' => $errors,
-		];
-		$this->load->view('layout', $array);
+		if(isset($this->session->id)){
+			$array = [
+				'page' => 'pages/about_us.php',
+			];
+			$this->load->view('layout', $array);
+		} else {
+			$array = [
+				'page' => 'pages/log/sing_in.php',
+				'data' => $errors,
+			];
+			$this->load->view('layout', $array);
+		}
 	}
 	
 	public function login(){
