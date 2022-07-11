@@ -69,6 +69,12 @@ a:hover {
     margin-left: auto;
 }
 
+.my-details2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
 .btn-primary {
     --bs-btn-color: #000;
     --bs-btn-bg: #064420;
@@ -237,6 +243,11 @@ scroll-page {
     .icono-cuino-grande {
         width: 100%;
     }
+    
+    .img-perfil {
+        width: 100%;
+        border-radius: 5%;
+    }
     .ul-menu-cuino{
         width: 70%; 
         height: auto; 
@@ -391,6 +402,10 @@ scroll-page {
         align-items: center; 
         width: 10%;
     }
+    .img-perfil {
+        width: 0%;
+        display: none;
+    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 664px) {
@@ -497,5 +512,17 @@ scroll-page {
         justify-content: center; 
         align-items: flex-start; 
         width: 32%;
+    }
+    .img-perfil {
+        width: 0%;
+        display: none;
+    }
+    .my-details2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-left: -25px;    */
+        margin-right: 20px;
+        margin-left: auto;
     }
 }
