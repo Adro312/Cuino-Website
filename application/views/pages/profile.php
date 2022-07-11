@@ -34,7 +34,7 @@
         <div class="col-12">
           <div class="card mb-4">
             <div class="card-header pb-0">
-              <h2 style="text-align: center; color: rgba(0, 0, 0, 0.800);">Profile</h2>
+              <h1 style="text-align: center; color: rgba(0, 0, 0, 0.800);">Profile</h1>
               <hr style="border: 1px solid #064420; width: 70%; margin: 30px auto 0px auto;">
             </div>
             <div class="card-header pb-0">

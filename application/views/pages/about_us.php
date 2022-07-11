@@ -16,12 +16,12 @@
                     <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Profile');?>">Profile</a></li>
                 </ul>
                 <div class="justify-content-lg-end seccion-boton-logout">
-                    <a href="<?=site_url('Login');?>">
-                        <button class="boton-salir boton-salir-600">
+                    <form action="<?=site_url('Pages/Profile/logOut');?>">
+                        <button type="submit" class="boton-salir boton-salir-600">
                             <ion-icon name="log-out-outline" class="icon-boton-log-out-media-Plus-that-1024xp icon-boton-log-out-media-Plus-that-1024xp icon-boton-log-out-media-Plus-that-769px" id="icono-log-out"></ion-icon>
                             <p class="boton-log-out-media-1024xp boton-log-out-media-Plus-that-1024xp boton-log-out-media-769px">Log Out</p>
                         </button>
-                    </a>
+                    </form>
                 </div>
             </nav>
         </div>
@@ -34,7 +34,7 @@
         <div class="col-12">
           <div class="card mb-4">
             <div class="card-header pb-0">
-              <h2 style="text-align: center; color: rgba(0, 0, 0, 0.800);">About Us</h2>
+              <h1 style="text-align: center; color: rgba(0, 0, 0, 0.800);">About Us</h1>
               <hr style="border: 1px solid #064420; width: 70%; margin: 30px auto 0px auto;">
             </div>
             <div class="pb-0">
