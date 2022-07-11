@@ -45,7 +45,7 @@
                         with a clean and sophisticated design, managed to create an atmosphere that 
                         escapes from San Jose Iturbide. Ornamentation, reflections and geometry 
                         play an important role in the construction of a timeless environment, which refers us 
-                        }to the aesthetics of art, and in turn, has design touches that place us in the current 
+                        to the aesthetics of art, and in turn, has design touches that place us in the current 
                         context, and intensify the contrast. of nature and the city. The clean and natural 
                         design that characterizes this project can be seen in its kitchen, a mixture of a brasserie 
                         and a steakhouse, with simple dishes but with the impeccable technique of Chilango chef

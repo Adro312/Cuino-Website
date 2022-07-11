@@ -40,58 +40,65 @@
             <div class="card-header pb-0">
               <!-- 
                   Aqui poner todo el contenido que va a ir en la pagina
-                -->
+                --> 
               <div class="main-content position-relative max-height-vh-100 h-100">
                 <div class="container-fluid py-4">
                   <div class="my-details"> <!-- Centra el contenido del formulario -->
-                    <div class="col-md-8">
+                    <div class="col-md-10">                        
                       <div class="card">
-                        <div class="card-body">
-                          <p class="text-uppercase fw-bold text-lg">User Information</p>
+                        <div class="card-body my-details2">
                           <div class="row">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="example-text-input" class="form-control-label text-cuino">Name</label>
-                                <input class="form-control" type="text" value="<?=$this->session->name?>">
+                            <p class="text-uppercase fw-bold text-lg">User Information</p>
+                            <div class="row-2">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="example-text-input" class="form-control-label text-cuino">Name</label>
+                                  <input class="form-control" type="text" value="<?=$this->session->name?>">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row-2">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="example-text-input" class="form-control-label text-cuino">Cellphone</label>
+                                  <input class="form-control" type="text" value="<?=$this->session->cellphone?>">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row-2">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="example-text-input" class="form-control-label text-cuino">Email address</label>
+                                  <input class="form-control" type="text" value="<?=$this->session->email?>">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row-2">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="example-text-input" class="form-control-label text-cuino">Creation date</label>
+                                  <input class="form-control" type="text" value="<?=$this->session->created_at?>">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row-2">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="example-text-input" class="form-control-label text-cuino">Role</label>
+                                  <input class="form-control" type="text" value="<?=$this->session->role?>">
+                                </div>
                               </div>
                             </div>
                           </div>
+                      
                           <div class="row">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="example-text-input" class="form-control-label text-cuino">Cellphone</label>
-                                <input class="form-control" type="text" value="<?=$this->session->cellphone?>">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="example-text-input" class="form-control-label text-cuino">Email address</label>
-                                <input class="form-control" type="text" value="<?=$this->session->email?>">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="example-text-input" class="form-control-label text-cuino">Creation date</label>
-                                <input class="form-control" type="text" value="<?=$this->session->created_at?>">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="example-text-input" class="form-control-label text-cuino">Role</label>
-                                <input class="form-control" type="text" value="<?=$this->session->role?>">
-                              </div>
-                            </div>
+                            <img src="<?=base_url('assets/img/comida/img-perfil2.jpeg');?>" alt="" class="img-perfil">
                           </div>
                         </div>
                       </div>
+                      
                     </div>
-                
+                    
                   </div>
                 </div>
               </div>
