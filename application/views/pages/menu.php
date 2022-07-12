@@ -9,7 +9,7 @@
           <img src="<?= base_url('assets/img/logos/LogoLetrasBlancas.png'); ?>" alt="" class="icono-cuino-grande icono-cuino-grande-600">
         </a>
         <ul class="breadcrumb bg-transparent justify-content-center ul-menu-cuino" id="menu-original">
-          <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-768 item-menu-1024 item-menu-600" href="<?= site_url('Pages/About_Us'); ?>">About Us</a></li>
+          <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-768 item-menu-1024 item-menu-600" href="<?= site_url('Pages/About_Us'); ?>">Home</a></li>
           <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?= site_url('Pages/Enterprise'); ?>">Developing</a></li>
           <li><a class="nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?= site_url('Pages/Menu'); ?>">Menu</a></li>
           <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?= site_url('Pages/Reviews'); ?>">Reviews</a></li>
@@ -29,7 +29,7 @@
   <!-- End Navbar -->
 
   <!-- Content  -->
-  <div class="container-fluid py-4">
+  <div class="container-fluid py-4" onload="actualizarItemsTicket();">
     <div class="row">
       <div class="col-12">
         <div class="card mb-4">
@@ -39,9 +39,6 @@
           </div>
           <section class="row">
             <div class="card-header pb-0 col ms-3">
-              <!--
-                      Aqui poner todo el contenido que va a ir en la pagina
-                   -->
               <scroll-container>
                 <div class="main-course">
                   <h2 style="color: #000;">Entries</h2>
@@ -60,7 +57,7 @@
                             <p class="card-text col fs-5" style="color: #000;">
                               $7.00
                             </p>
-                            <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            <button class="btn btn-primary col mx-4 text-btn-type" onclick="addToTicket('Tomato Soup', 7.00)">Add</button>
                           </div>
                         </div>
                       </div>
@@ -81,7 +78,7 @@
                             <p class="card-text col fs-5" style="color: #000;">
                               $8.50
                             </p>
-                            <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            <button class="btn btn-primary col mx-4 text-btn-type" onclick="addToTicket('Thai Fish Cakes', 8.50)">Add</button>
                           </div>
                         </div>
                       </div>
@@ -102,7 +99,7 @@
                             <p class="card-text col fs-5" style="color: #000;">
                               $5.50
                             </p>
-                            <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            <button class="btn btn-primary col mx-4 text-btn-type" onclick="addToTicket('Garlic Bread', 5.50)">Add</button>
                           </div>
                         </div>
                       </div>
@@ -127,7 +124,7 @@
                             <p class="card-text col fs-5" style="color: #000;">
                               $14.00
                             </p>
-                            <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            <button class="btn btn-primary col mx-4 text-btn-type" onclick="addToTicket('Le Poulet', 14.00)">Add</button>
                           </div>
                         </div>
                       </div>
@@ -148,7 +145,7 @@
                             <p class="card-text col fs-5" style="color: #000;">
                               $9.00
                             </p>
-                            <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            <button class="btn btn-primary col mx-4 text-btn-type" onclick="addToTicket('Salad', 9.00)">Add</button>
                           </div>
                         </div>
                       </div>
@@ -169,7 +166,7 @@
                             <p class="card-text col fs-5" style="color: #000;">
                               $12.00
                             </p>
-                            <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            <button class="btn btn-primary col mx-4 text-btn-type" onclick="addToTicket('Tuna Salad', 12.00)">Add</button>
                           </div>
                         </div>
                       </div>
@@ -194,7 +191,7 @@
                             <p class="card-text col fs-5" style="color: #000;">
                               $5.00
                             </p>
-                            <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            <button class="btn btn-primary col mx-4 text-btn-type" onclick="addToTicket('Fruits', 5.00)">Add</button>
                           </div>
                         </div>
                       </div>
@@ -215,7 +212,7 @@
                             <p class="card-text col fs-5" style="color: #000;">
                               $4.00
                             </p>
-                            <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            <button class="btn btn-primary col mx-4 text-btn-type" onclick="addToTicket('Rice Pudding', 4.00)">Add</button>
                           </div>
                         </div>
                       </div>
@@ -236,7 +233,7 @@
                             <p class="card-text col fs-5" style="color: #000;">
                               $4.50
                             </p>
-                            <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            <button class="btn btn-primary col mx-4 text-btn-type" onclick="addToTicket('Red Berries', 4.50)">Add</button>
                           </div>
                         </div>
                       </div>
@@ -261,7 +258,7 @@
                             <p class="card-text col fs-5" style="color: #000;">
                               $7.00
                             </p>
-                            <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            <button class="btn btn-primary col mx-4 text-btn-type" onclick="addToTicket('Strawberry Juice', 7.00)">Add</button>
                           </div>
                         </div>
                       </div>
@@ -282,7 +279,7 @@
                             <p class="card-text col fs-5" style="color: #000;">
                               $7.00
                             </p>
-                            <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            <button class="btn btn-primary col mx-4 text-btn-type" onclick="addToTicket('Pineapple Juice', 7.00)">Add</button>
                           </div>
                         </div>
                       </div>
@@ -303,7 +300,7 @@
                             <p class="card-text col fs-5" style="color: #000;">
                               $7.00
                             </p>
-                            <button class="btn btn-primary col mx-4 text-btn-type">Add</button>
+                            <button class="btn btn-primary col mx-4 text-btn-type" onclick="addToTicket('Berries Juice', 7.00)">Add</button>
                           </div>
                         </div>
                       </div>
@@ -311,106 +308,20 @@
                   </div>
                 </div>
               </scroll-container>
-
-
             </div>
+
             <div class="col carrito me-3">
               <div class="card-header pb-0">
                 <h2 style="text-align: center; color: #000;">Ticket</h2>
               </div>
-              <scroll-container class="scroll-ticket">
-                <div class="card-header pb-0 ticket-item">
-                  <div>
-                    <h3 style="color: #000;">Platillo</h3>
-                  </div>
-                  <div class="ticket-item-2">
-                    <h3 style="color: #000">$00000</h3>
-                    <button style="margin-left: 20px; background-color: #fff; border: none; border-radius: 10px;">
-                      <ion-icon name="trash-outline" style="font-size: 30px; color: red;"></ion-icon>
-                    </button>
-                  </div>
-                </div>
-                <div class="card-header pb-0 ticket-item">
-                  <div>
-                    <h3 style="color: #000;">Platillo</h3>
-                  </div>
-                  <div class="ticket-item-2">
-                    <h3 style="color: #000">$00000</h3>
-                    <button style="margin-left: 20px; background-color: #fff; border: none; border-radius: 10px;">
-                      <ion-icon name="trash-outline" style="font-size: 30px; color: red;"></ion-icon>
-                    </button>
-                  </div>
-                </div>
-                <div class="card-header pb-0 ticket-item">
-                  <div>
-                    <h3 style="color: #000;">Platillo</h3>
-                  </div>
-                  <div class="ticket-item-2">
-                    <h3 style="color: #000">$00000</h3>
-                    <button style="margin-left: 20px; background-color: #fff; border: none; border-radius: 10px;">
-                      <ion-icon name="trash-outline" style="font-size: 30px; color: red;"></ion-icon>
-                    </button>
-                  </div>
-                </div>
-                <div class="card-header pb-0 ticket-item">
-                  <div>
-                    <h3 style="color: #000;">Platillo</h3>
-                  </div>
-                  <div class="ticket-item-2">
-                    <h3 style="color: #000">$00000</h3>
-                    <button style="margin-left: 20px; background-color: #fff; border: none; border-radius: 10px;">
-                      <ion-icon name="trash-outline" style="font-size: 30px; color: red;"></ion-icon>
-                    </button>
-                  </div>
-                </div>
-                <div class="card-header pb-0 ticket-item">
-                  <div>
-                    <h3 style="color: #000;">Platillo</h3>
-                  </div>
-                  <div class="ticket-item-2">
-                    <h3 style="color: #000">$00000</h3>
-                    <button style="margin-left: 20px; background-color: #fff; border: none; border-radius: 10px;">
-                      <ion-icon name="trash-outline" style="font-size: 30px; color: red;"></ion-icon>
-                    </button>
-                  </div>
-                </div>
-                <div class="card-header pb-0 ticket-item">
-                  <div>
-                    <h3 style="color: #000;">Platillo</h3>
-                  </div>
-                  <div class="ticket-item-2">
-                    <h3 style="color: #000">$00000</h3>
-                    <button style="margin-left: 20px; background-color: #fff; border: none; border-radius: 10px;">
-                      <ion-icon name="trash-outline" style="font-size: 30px; color: red;"></ion-icon>
-                    </button>
-                  </div>
-                </div>
-                <div class="card-header pb-0 ticket-item">
-                  <div>
-                    <h3 style="color: #000;">Platillo</h3>
-                  </div>
-                  <div class="ticket-item-2">
-                    <h3 style="color: #000">$00000</h3>
-                    <button style="margin-left: 20px; background-color: #fff; border: none; border-radius: 10px;">
-                      <ion-icon name="trash-outline" style="font-size: 30px; color: red;"></ion-icon>
-                    </button>
-                  </div>
-                </div>
-                <div class="card-header pb-0 ticket-item">
-                  <div>
-                    <h3 style="color: #000;">Platillo</h3>
-                  </div>
-                  <div class="ticket-item-2">
-                    <h3 style="color: #000">$00000</h3>
-                    <button style="margin-left: 20px; background-color: #fff; border: none; border-radius: 10px;">
-                      <ion-icon name="trash-outline" style="font-size: 30px; color: red;"></ion-icon>
-                    </button>
-                  </div>
-                </div>
+              <scroll-container class="scroll-ticket" id="listaCompras">
+                <p style="font-size: 2.6em;">
+                  Click on the "ADD" button of the dish you would like to order so you can add it to the shopping cart.
+                </p>
               </scroll-container>
 
               <div class="card-header pb-0 m-4">
-                <h3 style="text-align: center; color: #000">Total: $</h3>
+                <h3 style="text-align: center; color: #000">Total: $<span id="precioTotal"></span></h3>
               </div>
             </div>
 

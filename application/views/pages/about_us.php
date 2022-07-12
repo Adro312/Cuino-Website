@@ -9,7 +9,7 @@
                     <img src="<?=base_url('assets/img/logos/LogoLetrasBlancas.png');?>" alt="" class="icono-cuino-grande icono-cuino-grande-600">
                 </a>
                 <ul class="breadcrumb bg-transparent justify-content-center ul-menu-cuino" id="menu-original">
-                    <li><a class="nav-bar text-white text-btn-type item-menu-768 item-menu-1024 item-menu-600" href="<?=site_url('Pages/About_Us');?>">About Us</a></li>
+                    <li><a class="nav-bar text-white text-btn-type item-menu-768 item-menu-1024 item-menu-600" href="<?=site_url('Pages/About_Us');?>">Home</a></li>
                     <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Enterprise');?>">Developing</a></li>
                     <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Menu');?>">Menu</a></li>
                     <li><a class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Reviews');?>">Reviews</a></li>
@@ -73,7 +73,7 @@
                                     <div class="card-body pt-0 p-3 text-center">
                                         <h3 class="text-center mb-0" style="color: rgba(0, 0, 0, 0.800); font-size: 1.2em;">Facebook</h3>
                                         <hr class="horizontal dark my-3">
-                                        <a href="https://www.facebook.com/profile.php?id=100082871556420" target="_blank">
+                                        <a href="https://www.facebook.com/CuinoRestaurant" target="_blank">
                                             <button style="margin: 0px auto; border: 1px solid #064420; border-radius: 10px; background-color: #06442087; width: 30%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
                                                 Ir<ion-icon name="chevron-forward-sharp" style="margin-left: 8px;"></ion-icon>
                                             </button>
@@ -91,7 +91,7 @@
                                     <div class="card-body pt-0 p-3 text-center">
                                         <h3 class="text-center mb-0" style="color: rgba(0, 0, 0, 0.800); font-size: 1.2em;">Instagram</h3>
                                         <hr class="horizontal dark my-3">
-                                        <a href="https://www.instagram.com/cuino_raue/" target="_blank">
+                                        <a href="https://www.instagram.com/cuino_restaurant/" target="_blank">
                                             <button style="margin: 0px auto; border: 1px solid #064420; border-radius: 10px; background-color: #06442087; width: 30%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
                                                 Ir<ion-icon name="chevron-forward-sharp" style="margin-left: 8px;"></ion-icon>
                                             </button>
