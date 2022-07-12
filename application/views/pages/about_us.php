@@ -1,3 +1,5 @@
+<div style="height: 10px; background-color: #064420 !important; margin-top: 0px !important;"></div>
+
 <div class="min-height-300 position-absolute w-100 " style="background-color: #064420 !important; margin-top: 0px !important;"></div>
 
 <main class="main-content position-relative border-radius-lg ">
