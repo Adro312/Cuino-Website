@@ -1,6 +1,12 @@
 .bg-primary-own {
     background-color: #064420 !important;
 }
+.fondo-nav{
+    position: relative !important;
+    overflow-y: -100px !important;
+    min-height: 300px !important;
+    width: 100% !important;
+}
 h1, h2, h3, h4, h5, h6, .text-btn-type {
     font-family: 'Pacifico', cursive;
     margin-top: 0;

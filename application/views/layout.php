@@ -5,6 +5,9 @@
     <?=$this->load->view('layouts/head.php',null,TRUE);?>
 </head>
 <body>
+    <div style="height: 10px; background-color: #064420 !important; margin-top: 0px !important;"></div>
+
+
     <!-- Contenido que mostrar -->
     <?=isset($data) ? $this->load->view($page,$data,TRUE) : $this->load->view($page,null,TRUE) ?>
 

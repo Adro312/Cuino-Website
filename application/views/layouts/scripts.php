@@ -1,3 +1,7 @@
+<!-- Codigo Menu -->
+<script src="<?=base_url('assets/js/FuncionMenu/Dato.js');?>"></script>
+<script src="<?=base_url('assets/js/FuncionMenu/Platillo.js');?>"></script>
+<script src="<?=base_url('assets/js/FuncionMenu/appMenu.js');?>"></script>
 <!--   Core JS Files   -->
 <script src="<?=base_url('assets/js/core/popper.min.js');?>"></script>
 <script src="<?=base_url('assets/js/core/bootstrap.min.js');?>"></script>
