@@ -23,8 +23,8 @@
             </div>
             
             <div class="card-header pb-0">
-                <div style="width: 90%; margin: 0px auto 30px; padding-left: 20px; padding-right: 20px;">
-                    <p style="color: rgba(0, 0, 0, 0.800); font-size: 1.8em; text-align: center;">
+                <div style="width: 90%; margin: 0px auto 30px;">
+                    <p class="text-home-600 text-home" style="margin-left: auto; margin-right: auto;">
                       This site was developed by the company <span class="font-weight-bold">Developers - SW17</span>.<br>With effort and dedication, it was possible to create this great website to be attractive and interactive with users who want to order something from their favorite restaurant <span class="font-weight-bold">"Cuino"</span>
                     </p>
                 </div>
