@@ -29,12 +29,39 @@ class Reviews extends CI_Controller {
 			$responseList = curl_exec($processList);	
 			$dataList = json_decode($responseList, true);
 			if ($dataList['errorMessage'] == ''){
+				$total = sizeof($dataList['data']);
+				$average = 0;
+				$Star5 = 0;
+				$Star4 = 0;
+				$Star3 = 0;
+				$Star2 = 0;
+				$Star1 = 0;
+
+				foreach($dataList['data'] as $review){
+					$average += $review['score'];
+					if($review['score']<=1) $Star1++;
+					else if($review['score']<=2) $Star2++;
+					else if($review['score']<=3) $Star3++;
+					else if($review['score']<=4) $Star4++;
+					else if($review['score']<=5) $Star5++;
+
+					if($review['user_id']==$this->session->id) $this->session->set_userdata('id_review', $review['id']);
+				}
+				$average /= $total;
+
 				$array = [
 					'page' => 'pages/reviews.php',
 					'data' => [
 						'list' => $dataList['data'],
 						'errors' => $errors,
 						'exists' => $exists,
+						'total' => $total,
+						'average' => $average,
+						'1Star' => $Star1,
+						'2Star' => $Star2,
+						'3Star' => $Star3,
+						'4Star' => $Star4,
+						'5Star' => $Star5,
 					],
 				];
 				$this->load->view('layout', $array);
@@ -84,5 +111,27 @@ class Reviews extends CI_Controller {
 		} else {
 			$this->index("Please fill the form");
 		}
+	}
+
+	public function deleteReview(){
+		
+		$id_str= $this->session->id_review;
+		$url = "http://arcane-brook-55437.herokuapp.com/api/reviews/reviews/$id_str";
+		$process = curl_init();
+
+		curl_setopt($process, CURLOPT_URL, $url);
+		curl_setopt($process, CURLOPT_CUSTOMREQUEST, "DELETE");
+		curl_setopt($process, CURLOPT_RETURNTRANSFER, TRUE);
+		
+		$response = curl_exec($process);
+		
+		$data = json_decode($response, true);
+
+		if ($data['errorMessage'] == ''){
+			$this->index();
+		} else {
+			$this->index($data['errorMessage']);
+		}
+		curl_close($process);
 	}
 }
