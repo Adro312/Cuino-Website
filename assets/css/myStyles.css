@@ -206,6 +206,17 @@ scroll-page {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+.main-1024{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.video-size{
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
 
 @media screen and (min-width: 1024px) {
     .seccion-boton-logout{
@@ -285,6 +296,42 @@ scroll-page {
         align-items: center; 
         width: 10%;
     }
+    .content-home{
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .img-content-home{
+        width: 50%; 
+        display: flex; 
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .text-content-home{
+        width: 50%; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .text-aboutUs{
+        color: rgba(0, 0, 0, 0.800); 
+        font-size: 1.6em; 
+        text-align: justify; 
+        width: 90%;
+    }
+    .text-home{
+        color: rgba(0, 0, 0, 0.800); 
+        font-size: 1.6em; 
+        width: 90%;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 953px) and (max-width: 1024px) {
@@ -343,6 +390,42 @@ scroll-page {
         justify-content: center; 
         align-items: center; 
         width: 10%;
+    }
+    .content-home{
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .img-content-home{
+        width: 50%; 
+        display: flex; 
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .text-content-home{
+        width: 50%; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .text-aboutUs{
+        color: rgba(0, 0, 0, 0.800); 
+        font-size: 1.6em; 
+        text-align: justify; 
+        width: 90%;
+    }
+    .text-home{
+        color: rgba(0, 0, 0, 0.800); 
+        font-size: 1.6em; 
+        width: 90%;
+        text-align: center;
     }
 }
 
@@ -411,6 +494,42 @@ scroll-page {
     .img-perfil {
         width: 0%;
         display: none;
+    }
+    .content-home{
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .img-content-home{
+        width: 50%; 
+        display: flex; 
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .text-content-home{
+        width: 50%; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .text-home-600{
+        color: rgba(0, 0, 0, 0.800); 
+        font-size: 1.4em; 
+        width: 90%;
+        text-align: center;
+    }
+    .text-aboutUs-600{
+        color: rgba(0, 0, 0, 0.800); 
+        font-size: 1.4em; 
+        text-align: justify; 
+        width: 90%;
     }
 }
 
@@ -530,5 +649,38 @@ scroll-page {
         /* margin-left: -25px;    */
         margin-right: 20px;
         margin-left: auto;
+    }
+    .content-home-600{
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-content-home-600{
+        width: 100%; 
+        display: flex; 
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .text-content-home-600{
+        width: 100%; 
+        display: flex; 
+        justify-content: center; 
+        margin-bottom: 10px;
+    }
+    .text-home-600{
+        color: rgba(0, 0, 0, 0.800); 
+        font-size: 1.4em; 
+        width: 90%;
+        text-align: center;
+    }
+    .text-aboutUs-600{
+        color: rgba(0, 0, 0, 0.800); 
+        font-size: 1.4em; 
+        text-align: justify; 
+        width: 90%;
     }
 }
