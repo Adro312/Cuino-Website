@@ -6,10 +6,12 @@
             </a>
             <ul class="breadcrumb bg-transparent justify-content-center ul-menu-cuino" id="menu-original">
                 <li><a id="NAV-HOME" class="opacity-5 nav-bar text-white text-btn-type item-menu-768 item-menu-1024 item-menu-600" href="<?=site_url('Pages/About_Us');?>">Home</a></li>
-                <li><a id="NAV-DEV" class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Enterprise');?>">Developing</a></li>
                 <li><a id="NAV-MENU" class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Menu');?>">Menu</a></li>
                 <?php if(isset($this->session->id)){?>
                     <li><a id="NAV-REVIEWS" class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Reviews');?>">Reviews</a></li>
+                <?php }?>
+                <li><a id="NAV-DEV" class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Enterprise');?>">Developing</a></li>
+                <?php if(isset($this->session->id)){?>
                     <li><a id="NAV-PROF" class="opacity-5 nav-bar text-white text-btn-type item-menu-1024 item-menu-768 item-menu-600" href="<?=site_url('Pages/Profile');?>">Profile</a></li>
                 <?php }?>
             </ul>
