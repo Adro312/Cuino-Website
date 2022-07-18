@@ -7,6 +7,11 @@
     <?=$this->load->view('layouts/nav.php',null,TRUE);?>
     <!-- End Navbar -->
 
+    <script>
+        let developer = document.getElementById('NAV-DEV');
+        developer.classList.remove('opacity-5');
+    </script>
+
     <!-- Content  -->
     <div class="container-fluid py-4">
       <div class="row">
