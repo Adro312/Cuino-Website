@@ -28,6 +28,9 @@
                     Don't have an account?
                     <a href="<?=site_url('Register');?>" class="text-primary-own font-weight-bold">Sign up</a>
                   </p>
+                  <p class="mb-4 login-text-subtitle- mx-auto">
+                    <a href="<?=site_url('Pages/About_Us');?>" class="text-primary-own font-weight-bold">Sign In later</a>
+                  </p>
                 </div>
               </div>
             </div>

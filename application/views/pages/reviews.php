@@ -1,5 +1,4 @@
 <div style="height: 10px; background-color: #064420 !important; margin-top: 0px !important;"></div>
-
 <div class="min-height-300 position-absolute w-100 " style="background-color: #064420 !important;"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -25,16 +24,21 @@
             <hr style="border: 1px solid #064420; width: 70%; margin: 30px auto 0px auto;">
           </div>
           <div class="card-header">
-            <!-- <div class="num-reviews">
-              <h1 style="text-align: center; color: rgba(0, 0, 0, 0.800);">4,7</h1>
+            <div class="num-reviews">
+              <h1 style="text-align: center; color: rgba(0, 0, 0, 0.800);"><?=number_format($data['average'], 2)?></h1>
               <div class="corazones">
-                <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                <ion-icon name="heart" style="color: #A5F04F;"></ion-icon>
-                <ion-icon name="heart-half" style="color: #A5F04F;"></ion-icon>
+                <div id="rateYoAll"
+                  data-rateyo-read-only="true"
+                  data-rateyo-rating="<?php if(isset($data['average'])) { echo($data['average']);}?>"></div>
+                </div>
+                <script>
+                    $(function () {
+                        $("#rateYoAll").rateYo({});
+                        $rateYo.rateYo("destroy");
+                    });
+                </script>
               </div>
-              <h6 class="num-reviews-total">1315 reviews</h6>
+              <h6 class="num-reviews-total"><?=$data['total']?> reviews</h6>
             </div>
 
             <figure style="width: 100%; display: flex; justify-content: center;">
@@ -42,7 +46,7 @@
                 <canvas id="myChart"></canvas>
               </div>
             </figure>
-            <br> -->
+            <br>
             <?php foreach ($data['list'] as $review) { ?>
             <div class="comentario comentario-600">
               <div class="avatar-coment avatar-coment-600">
@@ -71,6 +75,12 @@
                 <p class="text-xs text-secondary mb-0" style="width: 100%; text-align: justify;">
                   <?php if(isset($review['comment'])) { echo($review['comment']);}?>
                 </p>
+                <?php if($review['user_id']==$this->session->id){?>
+                  <form role="form" action="<?=site_url('Pages/Reviews/deleteReview');?>" method="post">
+                    <input name="id_user" type="hidden" value="<?=$review['user_id']?>">
+                    <a><button type="submit" class="btn btn-lg btn-cuino-primary btn-lg text-btn-type w-100 mt-4 mb-0">Delete</button></a>
+                  </form>
+                <?php }?>
               </div>
             </div>
             <?php }?>
@@ -89,7 +99,7 @@
 
                 <div class="form-rateYo" id="form-rating"
                   data-rateyo-num-stars="5"
-                  data-rateyo-half-star="true">
+                  data-rateyo-full-star="true">
                 </div>
                 <h4 style="color: rgba(0, 0, 0, 0.800);" class='result'> 0</h4>
                 <input type="hidden" name="form-rating">
@@ -125,3 +135,28 @@
   </div>
   <!-- End Content  -->
 </main>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+          labels: ['⭐⭐⭐⭐⭐', '⭐⭐⭐⭐', '⭐⭐⭐', '⭐⭐', '⭐'],
+          datasets: [{
+              label: 'Reviews',
+              data: [<?=$data['5Star']?>, <?=$data['4Star']?>, <?=$data['3Star']?>, <?=$data['2Star']?>, <?=$data['1Star']?>],
+              backgroundColor: [
+                  '#68E64C',
+                  '#A5F04F',
+                  '#F0E54F',
+                  '#EA992A',
+                  '#EA3529'
+              ]
+          }]
+      },
+      options: {
+            indexAxis: 'y',
+        }
+  });
+</script>
