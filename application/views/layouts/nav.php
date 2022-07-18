@@ -1,6 +1,6 @@
 <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl mt-4" id="navbarBlur" data-scroll="false">
     <div class="container-fluid py-1 px-3" style="margin: 0px auto; width: 90%; display: flex; flex-direction: row; align-items: center; justify-content: space-around;">
-    <nav aria-label="breadcrumb" class="row" style="display: flex; flex-direction: row; align-items: center; justify-content: space-evenly;">
+    <nav aria-label="breadcrumb" class="row nav-less-950 nav-plus-1024">
         <a href="<?=site_url('Pages/About_Us');?>" style="width: 15%;">
             <img src="<?=base_url('assets/img/logos/LogoLetrasBlancas.png');?>" alt="" style="width: 100%;">
         </a>
