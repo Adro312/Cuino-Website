@@ -332,6 +332,9 @@ scroll-page {
         width: 90%;
         text-align: center;
     }
+    #info-600{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 953px) and (max-width: 1024px) {
@@ -426,6 +429,9 @@ scroll-page {
         font-size: 1.6em; 
         width: 90%;
         text-align: center;
+    }
+    #info-600{
+        display: none;
     }
 }
 
@@ -530,6 +536,9 @@ scroll-page {
         font-size: 1.4em; 
         text-align: justify; 
         width: 90%;
+    }
+    #info-1024{
+        display: none;
     }
 }
 
@@ -682,5 +691,8 @@ scroll-page {
         font-size: 1.4em; 
         text-align: justify; 
         width: 90%;
+    }
+    #info-1024{
+        display: none;
     }
 }

@@ -15,19 +15,19 @@
         </ul>
         <div style="width: 15%;" class="justify-content-lg-end">
             <?php if(isset($this->session->id)){?>
-            <form action="<?=site_url('Pages/Profile/logOut');?>">
-                <button type="submit" class="boton-salir boton-salir-600">
-                    <ion-icon name="log-out-outline" class="icon-boton-log-out-media-Plus-that-1024xp icon-boton-log-out-media-Plus-that-1024xp icon-boton-log-out-media-Plus-that-769px" id="icono-log-out"></ion-icon>
-                    <p class="boton-log-out-media-1024xp boton-log-out-media-Plus-that-1024xp boton-log-out-media-769px">Log Out</p>
-                </button>
-            </form>
+                <form action="<?=site_url('Pages/Profile/logOut');?>">
+                    <button type="submit" class="boton-salir boton-salir-600">
+                        <ion-icon name="log-out-outline" class="icon-boton-log-out-media-Plus-that-1024xp icon-boton-log-out-media-Plus-that-1024xp icon-boton-log-out-media-Plus-that-769px" id="icono-log-out"></ion-icon>
+                        <p class="boton-log-out-media-1024xp boton-log-out-media-Plus-that-1024xp boton-log-out-media-769px">Log Out</p>
+                    </button>
+                </form>
             <?php } else {?>
-            <a href="<?=site_url('Login');?>">
-                <button class="boton-salir boton-salir-600" <?php if(!isset($this->session->id))?>>
-                    <ion-icon name="log-in-outline" class="icon-boton-log-out-media-Plus-that-1024xp icon-boton-log-out-media-Plus-that-1024xp icon-boton-log-out-media-Plus-that-769px" id="icono-log-out"></ion-icon>
-                    <p class="boton-log-out-media-1024xp boton-log-out-media-Plus-that-1024xp boton-log-out-media-769px">Log In</p>
-                </button>
-            </a>
+                <a href="<?=site_url('Login');?>">
+                    <button class="boton-salir boton-salir-600" <?php if(!isset($this->session->id))?>>
+                        <ion-icon name="log-in-outline" class="icon-boton-log-out-media-Plus-that-1024xp icon-boton-log-out-media-Plus-that-1024xp icon-boton-log-out-media-Plus-that-769px" id="icono-log-out"></ion-icon>
+                        <p class="boton-log-out-media-1024xp boton-log-out-media-Plus-that-1024xp boton-log-out-media-769px">Log In</p>
+                    </button>
+                </a>
             <?php }?>
         </div>
     </nav>
